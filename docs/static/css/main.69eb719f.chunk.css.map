@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,UAEE,QAAS,CACT,MACF,CAEA,OACI,WAAY,CACZ,YACJ","file":"main.69eb719f.chunk.css","sourcesContent":["html,\r\nbody {\r\n  margin: 0;\r\n  body: 0;\r\n}\r\n\r\ncanvas{\r\n    width: 100vw;\r\n    height: 100vh;\r\n}\r\n"]}

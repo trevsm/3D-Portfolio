@@ -1,0 +1,38 @@
+{
+  "name": "r3f-starter-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://trevsm.github.io/portfolio/",
+  "dependencies": {
+    "@react-three/drei": "^2.2.22",
+    "@react-three/postprocessing": "^1.5.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-postprocessing": "^1.4.0",
+    "react-scripts": "^4.0.1",
+    "react-spring": "^8.0.27",
+    "react-three-fiber": "5.0.3",
+    "three": "^0.123.0"
+  },
+  "scripts": {
+    "start": "react-scripts start ",
+    "build": "mv docs build && react-scripts build && mv build docs",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
