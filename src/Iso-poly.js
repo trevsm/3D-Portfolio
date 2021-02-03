@@ -599,6 +599,13 @@ function TextHeaders({ materials, nodes }) {
         position={[-0.83, 0.87, 0.14]}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
       />
+      <mesh
+        material={materials.Default_Color}
+        geometry={nodes.Look_Around.geometry}
+        position={[0.21, 0.41, -0.9]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={[0.87, 0.87, 0.87]}
+      />
     </group>
   )
 }
@@ -625,7 +632,7 @@ export default function Model(props) {
   const { camera, viewport } = useThree()
 
   useEffect(() => {
-    camera.fov = 21
+    camera.fov = 23
     camera.lookAt(0, 0, 0)
     camera.updateProjectionMatrix()
   })
