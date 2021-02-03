@@ -3,6 +3,7 @@ body {
   margin: 0;
   body: 0;
   height: 100vh;
+  background-color: #adade2;
 }
 canvas, #root{
   width: 100%;

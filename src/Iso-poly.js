@@ -234,4 +234,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/iso-poly.gltf')
+useGLTF.preload('/portfolio/models/iso-poly.gltf')
