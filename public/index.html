@@ -3,15 +3,59 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta
-      name="description"
-      content="Web site created using r3f-starter-app"
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="description" content="Web site created using r3f-starter-app" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
     />
     <title>r3f-starter-app</title>
+    <style>
+      .loader-1,
+      .loader-2 {
+        color: white;
+        font-size: 23px;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      .loader-1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .loader-2 {
+        position: absolute;
+        transform: translateX(-50%);
+        top: -10px;
+        min-width: 200px;
+      }
+
+      html,
+      body {
+        margin: 0;
+        body: 0;
+        height: 100vh;
+      }
+      canvas,
+      #root {
+        width: 100%;
+        height: 100%;
+      }
+
+      html,
+      body,
+      canvas {
+        background-color: #adade2;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="loader-1">Setting up stuff...</div>
+    </div>
   </body>
 </html>
