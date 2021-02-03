@@ -4479,7 +4479,7 @@
         },
         {
             "componentType" : 5126,
-            "count" : 8530,
+            "count" : 9140,
             "max" : [
                 0.3564511239528656,
                 0,
@@ -4494,17 +4494,17 @@
         },
         {
             "componentType" : 5126,
-            "count" : 8530,
+            "count" : 9140,
             "type" : "VEC3"
         },
         {
             "componentType" : 5126,
-            "count" : 8530,
+            "count" : 9140,
             "type" : "VEC2"
         },
         {
             "componentType" : 5123,
-            "count" : 19251,
+            "count" : 20553,
             "type" : "SCALAR"
         },
         {
@@ -5026,43 +5026,43 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 38389,
+            "byteLength" : 41089,
             "byteOffset" : 754168
         },
         {
             "buffer" : 0,
             "byteLength" : 16420,
-            "byteOffset" : 792560
+            "byteOffset" : 795260
         },
         {
             "buffer" : 0,
             "byteLength" : 7051,
-            "byteOffset" : 808980
+            "byteOffset" : 811680
         },
         {
             "buffer" : 0,
             "byteLength" : 418,
-            "byteOffset" : 816032
+            "byteOffset" : 818732
         },
         {
             "buffer" : 0,
             "byteLength" : 240,
-            "byteOffset" : 816452
+            "byteOffset" : 819152
         },
         {
             "buffer" : 0,
             "byteLength" : 15112,
-            "byteOffset" : 816692
+            "byteOffset" : 819392
         },
         {
             "buffer" : 0,
             "byteLength" : 193,
-            "byteOffset" : 831804
+            "byteOffset" : 834504
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 832000,
+            "byteLength" : 834700,
             "uri" : "iso-poly.bin"
         }
     ]
