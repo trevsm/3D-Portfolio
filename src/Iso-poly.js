@@ -556,7 +556,7 @@ function Clock({ materials, nodes, setItems }) {
   )
 
   useFrame(({ clock }) => {
-    minHand.current.rotation.z = clock.elapsedTime/10
+    minHand.current.rotation.z = Math.floor(-clock.elapsedTime)/10
     hourHand.current.rotation.z = minHand.current.rotation.z/10
   })
 
