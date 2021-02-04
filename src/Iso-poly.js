@@ -1,13 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useGLTF } from '@react-three/drei/useGLTF'
-import { useThree } from 'react-three-fiber'
+import { useFrame, useThree } from 'react-three-fiber'
 
-function Chair({ materials, nodes }) {
+function Chair({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
 
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
+
+  const Overlay = (
+    <div>
+      <h1 className="title">Chair</h1>
+    </div>
+  )
 
   return (
     <group>
@@ -17,6 +23,9 @@ function Chair({ materials, nodes }) {
         }}
         onPointerLeave={() => {
           setLabel(false)
+        }}
+        onClick={() => {
+          setItems(Overlay)
         }}
       >
         <mesh
@@ -54,12 +63,18 @@ function Chair({ materials, nodes }) {
   )
 }
 
-function Lamp({ materials, nodes }) {
+function Lamp({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
 
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
+
+  const Overlay = (
+    <div>
+      <h1 className="title">Ideas</h1>
+    </div>
+  )
 
   return (
     <group>
@@ -69,6 +84,9 @@ function Lamp({ materials, nodes }) {
         }}
         onPointerLeave={() => {
           setLabel(false)
+        }}
+        onClick={() => {
+          setItems(Overlay)
         }}
       >
         <mesh
@@ -106,12 +124,18 @@ function Lamp({ materials, nodes }) {
   )
 }
 
-function Soda({ materials, nodes }) {
+function Soda({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
 
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
+
+  const Overlay = (
+    <div>
+      <h1 className="title">Soda</h1>
+    </div>
+  )
 
   return (
     <group>
@@ -121,6 +145,9 @@ function Soda({ materials, nodes }) {
         }}
         onPointerLeave={() => {
           setLabel(false)
+        }}
+        onClick={() => {
+          setItems(Overlay)
         }}
       >
         <mesh
@@ -158,12 +185,18 @@ function Soda({ materials, nodes }) {
   )
 }
 
-function Blinds({ materials, nodes }) {
+function Blinds({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
 
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
+
+  const Overlay = (
+    <div>
+      <h1 className="title">Window</h1>
+    </div>
+  )
 
   return (
     <group>
@@ -174,6 +207,9 @@ function Blinds({ materials, nodes }) {
         }}
         onPointerLeave={() => {
           setLabel(false)
+        }}
+        onClick={() => {
+          setItems(Overlay)
         }}
         material={materials.Material}
         geometry={nodes.Blinds_HitBox.geometry}
@@ -208,12 +244,18 @@ function Blinds({ materials, nodes }) {
   )
 }
 
-function Computer({ materials, nodes }) {
+function Computer({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
 
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
+
+  const Overlay = (
+    <div>
+      <h1 className="title">Projects</h1>
+    </div>
+  )
 
   return (
     <group>
@@ -223,6 +265,9 @@ function Computer({ materials, nodes }) {
         }}
         onPointerLeave={() => {
           setLabel(false)
+        }}
+        onClick={() => {
+          setItems(Overlay)
         }}
       >
         <mesh
@@ -268,12 +313,18 @@ function Computer({ materials, nodes }) {
   )
 }
 
-function Garbage({ materials, nodes }) {
+function Garbage({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
 
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
+
+  const Overlay = (
+    <div>
+      <h1 className="title">Garbage</h1>
+    </div>
+  )
 
   return (
     <group>
@@ -283,6 +334,9 @@ function Garbage({ materials, nodes }) {
         }}
         onPointerLeave={() => {
           setLabel(false)
+        }}
+        onClick={() => {
+          setItems(Overlay)
         }}
       >
         <mesh
@@ -354,12 +408,18 @@ function Rug({ materials, nodes }) {
   )
 }
 
-function Books({ materials, nodes }) {
+function Books({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
 
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
+
+  const Overlay = (
+    <div>
+      <h1 className="title">Education</h1>
+    </div>
+  )
 
   return (
     <group>
@@ -369,6 +429,9 @@ function Books({ materials, nodes }) {
         }}
         onPointerLeave={() => {
           setLabel(false)
+        }}
+        onClick={() => {
+          setItems(Overlay)
         }}
       >
         <mesh
@@ -414,12 +477,18 @@ function Books({ materials, nodes }) {
   )
 }
 
-function WallArt({ materials, nodes }) {
+function WallArt({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
 
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
+
+  const Overlay = (
+    <div>
+      <h1 className="title">Music</h1>
+    </div>
+  )
 
   return (
     <group>
@@ -432,6 +501,9 @@ function WallArt({ materials, nodes }) {
         }}
         onPointerLeave={() => {
           setLabel(false)
+        }}
+        onClick={() => {
+          setItems(Overlay)
         }}
       />
       <mesh
@@ -468,12 +540,25 @@ function WallArt({ materials, nodes }) {
   )
 }
 
-function Clock({ materials, nodes }) {
+function Clock({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
+  const hourHand = useRef()
+  const minHand = useRef()
 
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
+
+  const Overlay = (
+    <div>
+      <h1 className="title">Time</h1>
+    </div>
+  )
+
+  useFrame(({ clock }) => {
+    minHand.current.rotation.z = clock.elapsedTime/10
+    hourHand.current.rotation.z = minHand.current.rotation.z/10
+  })
 
   return (
     <group>
@@ -483,6 +568,9 @@ function Clock({ materials, nodes }) {
         }}
         onPointerLeave={() => {
           setLabel(false)
+        }}
+        onClick={() => {
+          setItems(Overlay)
         }}
       >
         <mesh
@@ -494,12 +582,16 @@ function Clock({ materials, nodes }) {
           geometry={nodes.cbody_1.geometry}
         />
         <mesh
+          ref={minHand}
           material={materials.Default_Color}
           geometry={nodes.Large_Hand.geometry}
+          position={[0.45, 1.12158, -0.9]}
         />
         <mesh
+          ref={hourHand}
           material={materials.Default_Color}
           geometry={nodes.Small_Hand.geometry}
+          position={[0.45, 1.12151, -0.9]}
         />
       </group>
       <group visible={label}>
@@ -528,12 +620,18 @@ function Clock({ materials, nodes }) {
   )
 }
 
-function Glasses({ materials, nodes }) {
+function Glasses({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
 
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
+
+  const Overlay = (
+    <div>
+      <h1 className="title">Glasses</h1>
+    </div>
+  )
 
   return (
     <group>
@@ -546,6 +644,9 @@ function Glasses({ materials, nodes }) {
         }}
         onPointerLeave={() => {
           setLabel(false)
+        }}
+        onClick={() => {
+          setItems(Overlay)
         }}
       />
       <mesh
@@ -625,7 +726,7 @@ function Desk({ materials, nodes }) {
   )
 }
 
-export default function Model(props) {
+export default function Model({ setItems }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/portfolio/models/iso-poly.gltf')
 
@@ -646,18 +747,19 @@ export default function Model(props) {
     >
       <TextHeaders nodes={nodes} materials={materials} />
       <Room nodes={nodes} materials={materials} />
-      <Chair nodes={nodes} materials={materials} />
-      <Lamp nodes={nodes} materials={materials} />
-      <Soda nodes={nodes} materials={materials} />
-      <Blinds nodes={nodes} materials={materials} />
-      <Computer nodes={nodes} materials={materials} />
-      <Garbage nodes={nodes} materials={materials} />
       <Rug nodes={nodes} materials={materials} />
-      <Books nodes={nodes} materials={materials} />
-      <WallArt nodes={nodes} materials={materials} />
-      <Clock nodes={nodes} materials={materials} />
-      <Glasses nodes={nodes} materials={materials} />
       <Desk nodes={nodes} materials={materials} />
+
+      <Chair nodes={nodes} materials={materials} setItems={setItems} />
+      <Lamp nodes={nodes} materials={materials} setItems={setItems} />
+      <Soda nodes={nodes} materials={materials} setItems={setItems} />
+      <Blinds nodes={nodes} materials={materials} setItems={setItems} />
+      <Computer nodes={nodes} materials={materials} setItems={setItems} />
+      <Garbage nodes={nodes} materials={materials} setItems={setItems} />
+      <Books nodes={nodes} materials={materials} setItems={setItems} />
+      <WallArt nodes={nodes} materials={materials} setItems={setItems} />
+      <Clock nodes={nodes} materials={materials} setItems={setItems} />
+      <Glasses nodes={nodes} materials={materials} setItems={setItems} />
     </group>
   )
 }
