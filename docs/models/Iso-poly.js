@@ -61,35 +61,24 @@ export default function Model(props) {
         </mesh>
       </mesh>
       <mesh material={materials.Material} geometry={nodes.Blinds_HitBox.geometry} />
-      <group position={[-0.68, 0.58, -0.13]}>
-        <mesh material={materials.Default_White} geometry={nodes.Computer_1.geometry} />
-        <mesh material={materials.Default_Color} geometry={nodes.Computer_2.geometry} />
-        <group position={[0.68, -0.58, 0.13]}>
-          <mesh material={materials.Default_White} geometry={nodes.Cube.geometry} />
-          <mesh material={materials.Default_Color} geometry={nodes.Cube_1.geometry} />
-        </group>
-        <group position={[0.68, -0.58, 0.13]}>
-          <mesh material={materials.Default_Color} geometry={nodes.Laptop_Label_1.geometry} />
-          <mesh material={materials.Default_White} geometry={nodes.Laptop_Label_2.geometry} />
-          <mesh
-            material={materials.Default_Color}
-            geometry={nodes.Laptop_Text.geometry}
-            position={[-0.64, 0.73, -0.19]}
-            rotation={[Math.PI / 2, 0, -Math.PI / 2]}>
-            <mesh material={materials.Default_Color} geometry={nodes.Laptop_CTV.geometry} position={[0.01, 0, 0.04]} />
-          </mesh>
-        </group>
-      </group>
-      <group position={[-0.71, 0.54, -0.14]} rotation={[0, 0, 0.02]} scale={[1, 1.08, 0.99]}>
+      <mesh material={materials.Default_White} geometry={nodes.Computer_1.geometry} />
+      <mesh material={materials.Default_Color} geometry={nodes.Computer_2.geometry} />
+      <mesh material={materials.Default_White} geometry={nodes.Cube.geometry} />
+      <mesh material={materials.Default_Color} geometry={nodes.Cube_1.geometry} />
+      <mesh material={materials.Default_Color} geometry={nodes.Laptop_Label_1.geometry} />
+      <mesh material={materials.Default_White} geometry={nodes.Laptop_Label_2.geometry} />
+      <mesh
+        material={materials.Default_Color}
+        geometry={nodes.Laptop_Text.geometry}
+        position={[-0.64, 0.73, -0.19]}
+        rotation={[Math.PI / 2, 0, -Math.PI / 2]}>
+        <mesh material={materials.Default_Color} geometry={nodes.Laptop_CTV.geometry} position={[0.01, 0, 0.04]} />
+      </mesh>
+      <group position={[-0.71, 0.54, -0.14]}>
         <mesh material={materials.Default_White} geometry={nodes.Lid_1.geometry} />
         <mesh material={materials.Default_Color} geometry={nodes.Lid_2.geometry} />
       </group>
-      <mesh
-        material={nodes.Hinge.material}
-        geometry={nodes.Hinge.geometry}
-        position={[-0.72, 0.54, -0.14]}
-        scale={[0.49, 0.78, 15.97]}
-      />
+      <mesh material={materials.Default_White} geometry={nodes.Hinge.geometry} />
       <mesh material={materials.Default_Color} geometry={nodes.Bin_1.geometry} />
       <mesh material={materials.Default_White} geometry={nodes.Bin_2.geometry} />
       <mesh material={materials.Default_White} geometry={nodes.Garbage.geometry} />
@@ -167,8 +156,7 @@ export default function Model(props) {
         material={materials.Default_Color}
         geometry={nodes.Look_Around.geometry}
         position={[0.21, 0.41, -0.9]}
-        rotation={[Math.PI / 2, 0, 0]}
-        scale={[0.87, 0.87, 0.87]}
+        rotation={[1.56, 0, 0]}
       />
       <mesh material={materials.Default_White} geometry={nodes.Glasses_1.geometry} />
       <mesh material={materials.Default_Color} geometry={nodes.Glasses_2.geometry} />

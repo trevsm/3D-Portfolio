@@ -556,20 +556,15 @@
             "mesh" : 51,
             "name" : "Look_Around",
             "rotation" : [
-                -0.7071068286895752,
+                0.7038986086845398,
                 0,
                 0,
-                -0.7071068286895752
-            ],
-            "scale" : [
-                0.8728649616241455,
-                0.8728649616241455,
-                0.8728649616241455
+                0.7103004455566406
             ],
             "translation" : [
                 0.21368026733398438,
                 0.4144986867904663,
-                -0.8960892558097839
+                -0.9001173973083496
             ]
         },
         {
@@ -4694,27 +4689,27 @@
         },
         {
             "componentType" : 5126,
-            "count" : 8743,
+            "count" : 8845,
             "max" : [
-                0.37018194794654846,
+                0.32311883568763733,
                 0,
-                0.16159607470035553
+                0.1410515457391739
             ],
             "min" : [
-                -0.00012205140956211835,
+                -0.00010653438948793337,
                 0,
-                -0.04351132735610008
+                -0.03797950968146324
             ],
             "type" : "VEC3"
         },
         {
             "componentType" : 5126,
-            "count" : 8743,
+            "count" : 8845,
             "type" : "VEC3"
         },
         {
             "componentType" : 5126,
-            "count" : 8743,
+            "count" : 8845,
             "type" : "VEC2"
         },
         {
@@ -5286,48 +5281,48 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 39227,
+            "byteLength" : 39565,
             "byteOffset" : 755068
         },
         {
             "buffer" : 0,
             "byteLength" : 16420,
-            "byteOffset" : 794296
+            "byteOffset" : 794636
         },
         {
             "buffer" : 0,
             "byteLength" : 7051,
-            "byteOffset" : 810716
+            "byteOffset" : 811056
         },
         {
             "buffer" : 0,
             "byteLength" : 418,
-            "byteOffset" : 817768
+            "byteOffset" : 818108
         },
         {
             "buffer" : 0,
             "byteLength" : 240,
-            "byteOffset" : 818188
+            "byteOffset" : 818528
         },
         {
             "buffer" : 0,
             "byteLength" : 14901,
-            "byteOffset" : 818428
+            "byteOffset" : 818768
         },
         {
             "buffer" : 0,
             "byteLength" : 563,
-            "byteOffset" : 833332
+            "byteOffset" : 833672
         },
         {
             "buffer" : 0,
             "byteLength" : 193,
-            "byteOffset" : 833896
+            "byteOffset" : 834236
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 834092,
+            "byteLength" : 834432,
             "uri" : "iso-poly.bin"
         }
     ]

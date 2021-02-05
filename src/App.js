@@ -2,6 +2,8 @@ import React, { Suspense, useRef, useState, useEffect } from 'react'
 import { Html, OrbitControls } from '@react-three/drei'
 import { EffectComposer, Noise } from 'react-postprocessing'
 import { Canvas, useThree } from 'react-three-fiber'
+import { useSpring } from '@react-spring/core'
+import { a } from '@react-spring/three'
 import Model from './Iso-poly'
 
 import './App.css'
@@ -35,11 +37,15 @@ function Overlay(props) {
 function CustomCamera() {
   const { camera, viewport } = useThree()
 
-  useEffect(() => {
+  const setDefaultView = () =>{
     camera.fov = 23
     camera.lookAt(0, 0, 0)
     camera.updateProjectionMatrix()
-  })
+  }
+
+  useEffect(() => {
+    setDefaultView()
+  },[])
   return null
 }
 
