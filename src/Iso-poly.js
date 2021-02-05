@@ -1,13 +1,25 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { useGLTF } from '@react-three/drei/useGLTF'
-import { useFrame, useThree } from 'react-three-fiber'
+import { useFrame } from 'react-three-fiber'
+
+import { useSpring } from '@react-spring/core'
+import { a } from '@react-spring/three'
+
+const defaultConfig = {
+  mass: 5,
+  tension: 400,
+  friction: 150,
+  precision: 0.0001,
+}
 
 function Chair({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
+  const [active, setActive] = useState(false)
 
-  useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
-  }, [label])
+  const sProps = useSpring({
+    pos: active ? [0, 0, 0] : [1, 0, 0],
+    config: defaultConfig,
+  })
 
   const Overlay = (
     <div>
@@ -15,8 +27,16 @@ function Chair({ materials, nodes, setItems }) {
     </div>
   )
 
+  useEffect(() => {
+    setActive(true)
+  }, [])
+
+  useEffect(() => {
+    document.body.style.cursor = label ? 'pointer' : 'auto'
+  }, [label])
+
   return (
-    <group>
+    <a.group position={sProps.pos}>
       <group
         onPointerEnter={() => {
           setLabel(true)
@@ -59,25 +79,38 @@ function Chair({ materials, nodes, setItems }) {
           />
         </mesh>
       </group>
-    </group>
+    </a.group>
   )
 }
 
 function Lamp({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
+  const [active, setActive] = useState(false)
+
+  const endPos = [-0.71, 0.66, 0.22]
+
+  const sProps = useSpring({
+    pos: active ? endPos : [endPos[0], endPos[1] + 1, endPos[2]],
+    rot: active ? [0, 0, 0] : [0, Math.PI, 0],
+    config: defaultConfig,
+  })
+
+  const Overlay = (
+    <div>
+      <h1 className="title">Lamp</h1>
+    </div>
+  )
+
+  useEffect(() => {
+    setActive(true)
+  }, [])
 
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
 
-  const Overlay = (
-    <div>
-      <h1 className="title">Ideas</h1>
-    </div>
-  )
-
   return (
-    <group>
+    <a.group position={sProps.pos} rotation={sProps.rot}>
       <group
         onPointerEnter={() => {
           setLabel(true)
@@ -98,7 +131,7 @@ function Lamp({ materials, nodes, setItems }) {
           geometry={nodes.Hood_2.geometry}
         />
       </group>
-      <group visible={label}>
+      <group visible={label} position={[0.71, -0.66, -0.22]}>
         <mesh
           material={materials.Default_Color}
           geometry={nodes.Lamp_Label_1.geometry}
@@ -120,16 +153,18 @@ function Lamp({ materials, nodes, setItems }) {
           />
         </mesh>
       </group>
-    </group>
+    </a.group>
   )
 }
 
 function Soda({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
+  const [active, setActive] = useState(false)
 
-  useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
-  }, [label])
+  const sProps = useSpring({
+    pos: active ? [0, 0, 0] : [0, 1, 0],
+    config: defaultConfig,
+  })
 
   const Overlay = (
     <div>
@@ -137,8 +172,18 @@ function Soda({ materials, nodes, setItems }) {
     </div>
   )
 
+  useEffect(() => {
+    setTimeout(() => {
+      setActive(true)
+    }, 200)
+  }, [])
+
+  useEffect(() => {
+    document.body.style.cursor = label ? 'pointer' : 'auto'
+  }, [label])
+
   return (
-    <group>
+    <a.group position={sProps.pos}>
       <group
         onPointerEnter={() => {
           setLabel(true)
@@ -181,7 +226,7 @@ function Soda({ materials, nodes, setItems }) {
           />
         </mesh>
       </group>
-    </group>
+    </a.group>
   )
 }
 
@@ -246,16 +291,28 @@ function Blinds({ materials, nodes, setItems }) {
 
 function Computer({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
+  const [active, setActive] = useState(false)
 
-  useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
-  }, [label])
+  const sProps = useSpring({
+    rot: active ? [0, 0, 0] : [0, 0, -1.8],
+    config: defaultConfig,
+  })
 
   const Overlay = (
     <div>
       <h1 className="title">Projects</h1>
     </div>
   )
+
+  useEffect(() => {
+    setTimeout(() => {
+      setActive(true)
+    }, 1000)
+  }, [])
+
+  useEffect(() => {
+    document.body.style.cursor = label ? 'pointer' : 'auto'
+  }, [label])
 
   return (
     <group>
@@ -286,7 +343,19 @@ function Computer({ materials, nodes, setItems }) {
           material={materials.Default_Color}
           geometry={nodes.Cube_1.geometry}
         />
+        <a.group position={[-0.713, 0.545, -0.14]} rotation={sProps.rot}>
+          <mesh
+            material={materials.Default_White}
+            geometry={nodes.Lid_1.geometry}
+          />
+          <mesh
+            material={materials.Default_Color}
+            geometry={nodes.Lid_2.geometry}
+          />
+        </a.group>
+        <mesh material={nodes.Hinge.material} geometry={nodes.Hinge.geometry} />
       </group>
+
       <group visible={label}>
         <mesh
           material={materials.Default_Color}
@@ -410,10 +479,12 @@ function Rug({ materials, nodes }) {
 
 function Books({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
+  const [active, setActive] = useState(false)
 
-  useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
-  }, [label])
+  const sProps = useSpring({
+    pos: active ? [0, 0, 0] : [0, 1, 0],
+    config: defaultConfig,
+  })
 
   const Overlay = (
     <div>
@@ -421,8 +492,18 @@ function Books({ materials, nodes, setItems }) {
     </div>
   )
 
+  useEffect(() => {
+    setTimeout(() => {
+      setActive(true)
+    }, 300)
+  }, [])
+
+  useEffect(() => {
+    document.body.style.cursor = label ? 'pointer' : 'auto'
+  }, [label])
+
   return (
-    <group>
+    <a.group position={sProps.pos}>
       <group
         onPointerEnter={() => {
           setLabel(true)
@@ -473,7 +554,7 @@ function Books({ materials, nodes, setItems }) {
           />
         </mesh>
       </group>
-    </group>
+    </a.group>
   )
 }
 
@@ -556,8 +637,8 @@ function Clock({ materials, nodes, setItems }) {
   )
 
   useFrame(({ clock }) => {
-    minHand.current.rotation.z = Math.floor(-clock.elapsedTime)/10
-    hourHand.current.rotation.z = minHand.current.rotation.z/10
+    minHand.current.rotation.z = Math.floor(-clock.elapsedTime) / 10
+    hourHand.current.rotation.z = minHand.current.rotation.z / 10
   })
 
   return (
@@ -622,10 +703,12 @@ function Clock({ materials, nodes, setItems }) {
 
 function Glasses({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
+  const [active, setActive] = useState(false)
 
-  useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
-  }, [label])
+  const sProps = useSpring({
+    pos: active ? [0, 0, 0] : [0, 1, 0],
+    config: defaultConfig,
+  })
 
   const Overlay = (
     <div>
@@ -633,8 +716,18 @@ function Glasses({ materials, nodes, setItems }) {
     </div>
   )
 
+  useEffect(() => {
+    setTimeout(() => {
+      setActive(true)
+    }, 100)
+  }, [])
+
+  useEffect(() => {
+    document.body.style.cursor = label ? 'pointer' : 'auto'
+  }, [label])
+
   return (
-    <group>
+    <a.group position={sProps.pos}>
       <mesh
         visible={false}
         material={materials.Material}
@@ -651,7 +744,11 @@ function Glasses({ materials, nodes, setItems }) {
       />
       <mesh
         material={materials.Default_White}
-        geometry={nodes.Glasses.geometry}
+        geometry={nodes.Glasses_1.geometry}
+      />
+      <mesh
+        material={materials.Default_Color}
+        geometry={nodes.Glasses_2.geometry}
       />
       <group visible={label}>
         <mesh
@@ -675,35 +772,56 @@ function Glasses({ materials, nodes, setItems }) {
           />
         </mesh>
       </group>
-    </group>
+    </a.group>
   )
 }
 
 function TextHeaders({ materials, nodes }) {
+  const [active, setActive] = useState(false)
+
+  const pX = [
+    [-0.83, 1.18, 0.73],
+    [-0.83, 0.95, 0.14],
+    [-0.83, 0.87, 0.14],
+    [0.21, 0.41, -0.9],
+  ]
+
+  const sProps = useSpring({
+    pos0: active ? pX[0] : [pX[0][0] - 0.1, pX[0][1], pX[0][2]],
+    pos1: active ? pX[1] : [pX[1][0] - 1, pX[1][1], pX[1][2]],
+    pos2: active ? pX[2] : [pX[2][0] - 2, pX[2][1], pX[2][2]],
+    pos3: active ? pX[3] : [pX[3][0], pX[3][1], pX[3][2] - 10],
+    config: { mass: 20, tension: 400, friction: 200, precision: 0.0001 },
+  })
+
+  useEffect(() => {
+    setActive(true)
+  }, [])
+
   return (
     <group>
-      <mesh
+      <a.mesh
         material={materials.Default_Color}
         geometry={nodes.Hello.geometry}
-        position={[-0.83, 1.18, 0.73]}
+        position={sProps.pos0}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
       />
-      <mesh
+      <a.mesh
         material={materials.Default_Color}
         geometry={nodes.Im_Trevor.geometry}
-        position={[-0.83, 0.95, 0.14]}
+        position={sProps.pos1}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
       />
-      <mesh
+      <a.mesh
         material={materials.Default_Color}
         geometry={nodes.I_Create.geometry}
-        position={[-0.83, 0.87, 0.14]}
+        position={sProps.pos2}
         rotation={[Math.PI / 2, 0, -Math.PI / 2]}
       />
-      <mesh
+      <a.mesh
         material={materials.Default_Color}
         geometry={nodes.Look_Around.geometry}
-        position={[0.21, 0.41, -0.9]}
+        position={sProps.pos3}
         rotation={[Math.PI / 2, 0, 0]}
         scale={[0.87, 0.87, 0.87]}
       />
@@ -730,14 +848,6 @@ export default function Model({ setItems }) {
   const group = useRef()
   const { nodes, materials } = useGLTF('/portfolio/models/iso-poly.gltf')
 
-  const { camera, viewport } = useThree()
-
-  useEffect(() => {
-    camera.fov = 23
-    camera.lookAt(0, 0, 0)
-    camera.updateProjectionMatrix()
-  })
-
   return (
     <group
       ref={group}
@@ -749,16 +859,15 @@ export default function Model({ setItems }) {
       <Room nodes={nodes} materials={materials} />
       <Rug nodes={nodes} materials={materials} />
       <Desk nodes={nodes} materials={materials} />
-
       <Chair nodes={nodes} materials={materials} setItems={setItems} />
       <Lamp nodes={nodes} materials={materials} setItems={setItems} />
-      <Soda nodes={nodes} materials={materials} setItems={setItems} />
+      <Clock nodes={nodes} materials={materials} setItems={setItems} />
       <Blinds nodes={nodes} materials={materials} setItems={setItems} />
       <Computer nodes={nodes} materials={materials} setItems={setItems} />
       <Garbage nodes={nodes} materials={materials} setItems={setItems} />
-      <Books nodes={nodes} materials={materials} setItems={setItems} />
       <WallArt nodes={nodes} materials={materials} setItems={setItems} />
-      <Clock nodes={nodes} materials={materials} setItems={setItems} />
+      <Soda nodes={nodes} materials={materials} setItems={setItems} />
+      <Books nodes={nodes} materials={materials} setItems={setItems} />
       <Glasses nodes={nodes} materials={materials} setItems={setItems} />
     </group>
   )

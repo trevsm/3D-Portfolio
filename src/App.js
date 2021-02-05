@@ -1,7 +1,7 @@
-import React, { Suspense, useRef, useState } from 'react'
+import React, { Suspense, useRef, useState, useEffect } from 'react'
 import { Html, OrbitControls } from '@react-three/drei'
 import { EffectComposer, Noise } from 'react-postprocessing'
-import { Canvas } from 'react-three-fiber'
+import { Canvas, useThree } from 'react-three-fiber'
 import Model from './Iso-poly'
 
 import './App.css'
@@ -32,6 +32,17 @@ function Overlay(props) {
   )
 }
 
+function CustomCamera() {
+  const { camera, viewport } = useThree()
+
+  useEffect(() => {
+    camera.fov = 23
+    camera.lookAt(0, 0, 0)
+    camera.updateProjectionMatrix()
+  })
+  return null
+}
+
 export default function App() {
   const [overlayOpen, setOverlayOpen] = useState(false)
   const overlayItems = useRef([])
@@ -56,6 +67,7 @@ export default function App() {
         <EffectComposer>
           <Noise opacity={0.03} />
         </EffectComposer>
+        <CustomCamera />
       </Canvas>
       <Overlay overlayOpen={overlayOpen} setOverlayOpen={setOverlayOpen}>
         {overlayItems.current}

@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://trevsm.github.io/portfolio/",
   "dependencies": {
+    "@react-spring/core": "^9.0.0-rc.3",
+    "@react-spring/three": "^9.0.0-rc.3",
     "@react-three/drei": "^2.2.22",
     "@react-three/postprocessing": "^1.5.1",
     "react": "16.13.1",
