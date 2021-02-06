@@ -97,7 +97,7 @@ function Lamp({ materials, nodes, setItems }) {
 
   const Overlay = (
     <div>
-      <h1 className="title">Lamp</h1>
+      <h1 className="title">Future Projects</h1>
     </div>
   )
 
@@ -129,6 +129,12 @@ function Lamp({ materials, nodes, setItems }) {
         <mesh
           material={materials.Default_White}
           geometry={nodes.Hood_2.geometry}
+        />
+        <mesh
+          visible={false}
+          material={materials.Material}
+          geometry={nodes.Lamp_HitBox.geometry}
+          position={[0.71, -0.66, -0.22]}
         />
       </group>
       <group visible={label} position={[0.71, -0.66, -0.22]}>
@@ -632,7 +638,7 @@ function Clock({ materials, nodes, setItems }) {
 
   const Overlay = (
     <div>
-      <h1 className="title">Time</h1>
+      <h1 className="title">Timeline</h1>
     </div>
   )
 
@@ -687,13 +693,13 @@ function Clock({ materials, nodes, setItems }) {
         <mesh
           material={materials.Default_Color}
           geometry={nodes.Clock_Text.geometry}
-          position={[0.59, 1.35, -0.9]}
+          position={[0.56, 1.35, -0.9]}
           rotation={[Math.PI / 2, 0, 0]}
         >
           <mesh
             material={materials.Default_Color}
             geometry={nodes.Clock_CTV.geometry}
-            position={[-0.01, 0, 0.04]}
+            position={[0.01, 0, 0.04]}
           />
         </mesh>
       </group>
@@ -712,7 +718,7 @@ function Glasses({ materials, nodes, setItems }) {
 
   const Overlay = (
     <div>
-      <h1 className="title">Glasses</h1>
+      <h1 className="title">Vision</h1>
     </div>
   )
 
@@ -762,13 +768,13 @@ function Glasses({ materials, nodes, setItems }) {
         <mesh
           material={materials.Default_Color}
           geometry={nodes.Glasses_Text.geometry}
-          position={[-0.72, 0.69, -0.42]}
+          position={[-0.72, 0.69, -0.43]}
           rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         >
           <mesh
             material={materials.Default_Color}
             geometry={nodes.Glasses_CTV.geometry}
-            position={[0.01, 0, 0.04]}
+            position={[-0.01, 0, 0.04]}
           />
         </mesh>
       </group>
