@@ -20,30 +20,33 @@
                 10,
                 11,
                 15,
-                19,
-                20,
+                16,
+                17,
                 25,
                 26,
-                27,
+                31,
                 32,
                 33,
-                34,
+                38,
                 39,
-                43,
-                44,
+                40,
                 45,
-                47,
-                48,
                 49,
+                50,
+                51,
+                53,
+                54,
                 55,
-                56,
-                57,
-                58,
-                59,
-                60,
                 61,
+                62,
+                63,
+                64,
                 65,
-                66
+                66,
+                67,
+                71,
+                72,
+                73
             ]
         }
     ],
@@ -230,6 +233,28 @@
         },
         {
             "mesh" : 15,
+            "name" : "Tab",
+            "translation" : [
+                -0.5912313461303711,
+                0.5937291979789734,
+                -0.41484832763671875
+            ]
+        },
+        {
+            "mesh" : 16,
+            "name" : "Hole"
+        },
+        {
+            "mesh" : 17,
+            "name" : "Blinds",
+            "translation" : [
+                -0.0481715202331543,
+                1.2292799949645996,
+                -0.9467201828956604
+            ]
+        },
+        {
+            "mesh" : 18,
             "name" : "Blinds_CTV",
             "translation" : [
                 0.012151479721069336,
@@ -239,9 +264,9 @@
         },
         {
             "children" : [
-                16
+                19
             ],
-            "mesh" : 16,
+            "mesh" : 19,
             "name" : "Blinds_Text",
             "rotation" : [
                 -0.7071068286895752,
@@ -257,28 +282,44 @@
         },
         {
             "children" : [
-                17
+                20
             ],
-            "mesh" : 17,
+            "mesh" : 20,
             "name" : "Blinds_Label"
         },
         {
-            "children" : [
-                18
-            ],
-            "mesh" : 18,
-            "name" : "Blinds"
+            "mesh" : 21,
+            "name" : "Bottom"
         },
         {
-            "mesh" : 19,
+            "mesh" : 22,
+            "name" : "StringL"
+        },
+        {
+            "mesh" : 23,
+            "name" : "StringR"
+        },
+        {
+            "children" : [
+                18,
+                21,
+                22,
+                23,
+                24
+            ],
+            "mesh" : 24,
+            "name" : "Top"
+        },
+        {
+            "mesh" : 25,
             "name" : "Blinds_HitBox"
         },
         {
-            "mesh" : 20,
+            "mesh" : 26,
             "name" : "Keys"
         },
         {
-            "mesh" : 21,
+            "mesh" : 27,
             "name" : "Laptop_CTV",
             "translation" : [
                 0.012035250663757324,
@@ -288,9 +329,9 @@
         },
         {
             "children" : [
-                22
+                28
             ],
-            "mesh" : 22,
+            "mesh" : 28,
             "name" : "Laptop_Text",
             "rotation" : [
                 0.5,
@@ -306,21 +347,21 @@
         },
         {
             "children" : [
-                23
+                29
             ],
-            "mesh" : 23,
+            "mesh" : 29,
             "name" : "Laptop_Label"
         },
         {
             "children" : [
-                21,
-                24
+                27,
+                30
             ],
-            "mesh" : 24,
+            "mesh" : 30,
             "name" : "Computer"
         },
         {
-            "mesh" : 25,
+            "mesh" : 31,
             "name" : "Lid",
             "translation" : [
                 -0.7124469876289368,
@@ -329,15 +370,15 @@
             ]
         },
         {
-            "mesh" : 26,
+            "mesh" : 32,
             "name" : "Hinge"
         },
         {
-            "mesh" : 27,
+            "mesh" : 33,
             "name" : "Garbage"
         },
         {
-            "mesh" : 28,
+            "mesh" : 34,
             "name" : "Garbage_CTV",
             "translation" : [
                 0.020324110984802246,
@@ -347,9 +388,9 @@
         },
         {
             "children" : [
-                29
+                35
             ],
-            "mesh" : 29,
+            "mesh" : 35,
             "name" : "Garbage_Text",
             "rotation" : [
                 0.5,
@@ -365,33 +406,33 @@
         },
         {
             "children" : [
-                30
+                36
             ],
-            "mesh" : 30,
+            "mesh" : 36,
             "name" : "Garbage_Label"
         },
         {
             "children" : [
-                28,
-                31
+                34,
+                37
             ],
-            "mesh" : 31,
+            "mesh" : 37,
             "name" : "Bin"
         },
         {
-            "mesh" : 32,
+            "mesh" : 38,
             "name" : "Room"
         },
         {
-            "mesh" : 33,
+            "mesh" : 39,
             "name" : "Rug"
         },
         {
-            "mesh" : 34,
+            "mesh" : 40,
             "name" : "Book_01"
         },
         {
-            "mesh" : 35,
+            "mesh" : 41,
             "name" : "Books_CTV",
             "translation" : [
                 0.031412482261657715,
@@ -401,9 +442,9 @@
         },
         {
             "children" : [
-                36
+                42
             ],
-            "mesh" : 36,
+            "mesh" : 42,
             "name" : "Books_Text",
             "rotation" : [
                 0.5,
@@ -419,21 +460,21 @@
         },
         {
             "children" : [
-                37
+                43
             ],
-            "mesh" : 37,
+            "mesh" : 43,
             "name" : "Books_Label"
         },
         {
             "children" : [
-                35,
-                38
+                41,
+                44
             ],
-            "mesh" : 38,
+            "mesh" : 44,
             "name" : "Books.001"
         },
         {
-            "mesh" : 39,
+            "mesh" : 45,
             "name" : "Art_CTV",
             "translation" : [
                 0.02091360092163086,
@@ -443,9 +484,9 @@
         },
         {
             "children" : [
-                40
+                46
             ],
-            "mesh" : 40,
+            "mesh" : 46,
             "name" : "Art_Text",
             "rotation" : [
                 0.5,
@@ -461,20 +502,20 @@
         },
         {
             "children" : [
-                41
+                47
             ],
-            "mesh" : 41,
+            "mesh" : 47,
             "name" : "Art_Label"
         },
         {
             "children" : [
-                42
+                48
             ],
-            "mesh" : 42,
+            "mesh" : 48,
             "name" : "Frames"
         },
         {
-            "mesh" : 43,
+            "mesh" : 49,
             "name" : "Art_HitBox",
             "translation" : [
                 0.01204870268702507,
@@ -483,7 +524,7 @@
             ]
         },
         {
-            "mesh" : 44,
+            "mesh" : 50,
             "name" : "Sun01",
             "translation" : [
                 -0.8296781778335571,
@@ -492,14 +533,14 @@
             ]
         },
         {
-            "mesh" : 45,
+            "mesh" : 51,
             "name" : "Lines"
         },
         {
             "children" : [
-                46
+                52
             ],
-            "mesh" : 46,
+            "mesh" : 52,
             "name" : "Record",
             "translation" : [
                 -0.826683759689331,
@@ -508,7 +549,7 @@
             ]
         },
         {
-            "mesh" : 47,
+            "mesh" : 53,
             "name" : "Arm",
             "translation" : [
                 -0.8247028589248657,
@@ -517,7 +558,7 @@
             ]
         },
         {
-            "mesh" : 48,
+            "mesh" : 54,
             "name" : "Sun02",
             "translation" : [
                 -0.8296781778335571,
@@ -526,7 +567,7 @@
             ]
         },
         {
-            "mesh" : 49,
+            "mesh" : 55,
             "name" : "Clock_CTV",
             "translation" : [
                 0.014416754245758057,
@@ -536,9 +577,9 @@
         },
         {
             "children" : [
-                50
+                56
             ],
-            "mesh" : 50,
+            "mesh" : 56,
             "name" : "Clock_Text",
             "rotation" : [
                 -0.7071068286895752,
@@ -554,13 +595,13 @@
         },
         {
             "children" : [
-                51
+                57
             ],
-            "mesh" : 51,
+            "mesh" : 57,
             "name" : "Clock_Label"
         },
         {
-            "mesh" : 52,
+            "mesh" : 58,
             "name" : "Large_Hand",
             "translation" : [
                 0.44736459851264954,
@@ -569,7 +610,7 @@
             ]
         },
         {
-            "mesh" : 53,
+            "mesh" : 59,
             "name" : "Small_Hand",
             "translation" : [
                 0.4474955201148987,
@@ -579,15 +620,15 @@
         },
         {
             "children" : [
-                52,
-                53,
-                54
+                58,
+                59,
+                60
             ],
-            "mesh" : 54,
+            "mesh" : 60,
             "name" : "Clock_Body"
         },
         {
-            "mesh" : 55,
+            "mesh" : 61,
             "name" : "Hello",
             "rotation" : [
                 0.5,
@@ -602,7 +643,7 @@
             ]
         },
         {
-            "mesh" : 56,
+            "mesh" : 62,
             "name" : "Im_Trevor",
             "rotation" : [
                 0.5,
@@ -617,7 +658,7 @@
             ]
         },
         {
-            "mesh" : 57,
+            "mesh" : 63,
             "name" : "I_Create",
             "rotation" : [
                 0.5,
@@ -637,7 +678,7 @@
             ]
         },
         {
-            "mesh" : 58,
+            "mesh" : 64,
             "name" : "Look_Around",
             "rotation" : [
                 0.7038986086845398,
@@ -652,7 +693,7 @@
             ]
         },
         {
-            "mesh" : 59,
+            "mesh" : 65,
             "name" : "Circle1",
             "scale" : [
                 0.7281113266944885,
@@ -666,7 +707,7 @@
             ]
         },
         {
-            "mesh" : 60,
+            "mesh" : 66,
             "name" : "Circle2",
             "rotation" : [
                 0,
@@ -686,7 +727,7 @@
             ]
         },
         {
-            "mesh" : 61,
+            "mesh" : 67,
             "name" : "Glasses_CTV",
             "translation" : [
                 -0.0062014758586883545,
@@ -696,9 +737,9 @@
         },
         {
             "children" : [
-                62
+                68
             ],
-            "mesh" : 62,
+            "mesh" : 68,
             "name" : "Glasses_Text",
             "rotation" : [
                 0.5,
@@ -714,21 +755,29 @@
         },
         {
             "children" : [
-                63
+                69
             ],
-            "mesh" : 63,
-            "name" : "Glasses_Label"
+            "mesh" : 69,
+            "name" : "Glasses_Label",
+            "translation" : [
+                0,
+                0.00930730439722538,
+                0
+            ]
         },
         {
             "children" : [
-                64
+                70
             ],
-            "mesh" : 64,
+            "mesh" : 70,
             "name" : "Glasses"
         },
         {
-            "mesh" : 65,
+            "mesh" : 71,
             "name" : "Glasses_HitBox"
+        },
+        {
+            "name" : "Glasses.001"
         }
     ],
     "materials" : [
@@ -1304,7 +1353,7 @@
             ]
         },
         {
-            "name" : "Blinds_CTV",
+            "name" : "Tab",
             "primitives" : [
                 {
                     "attributes" : {
@@ -1315,6 +1364,81 @@
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
                             "bufferView" : 23,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 90,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Hole",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 91,
+                        "NORMAL" : 92,
+                        "TEXCOORD_0" : 93
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 24,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 94,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Blinds",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 95,
+                        "NORMAL" : 96,
+                        "TEXCOORD_0" : 97
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 25,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 98,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Blinds_CTV",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 99,
+                        "NORMAL" : 100,
+                        "TEXCOORD_0" : 101
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 26,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1333,13 +1457,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 90,
-                        "NORMAL" : 91,
-                        "TEXCOORD_0" : 92
+                        "POSITION" : 102,
+                        "NORMAL" : 103,
+                        "TEXCOORD_0" : 104
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 24,
+                            "bufferView" : 27,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1347,7 +1471,7 @@
                             }
                         }
                     },
-                    "indices" : 93,
+                    "indices" : 105,
                     "material" : 0,
                     "mode" : 4
                 }
@@ -1358,13 +1482,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 94,
-                        "NORMAL" : 95,
-                        "TEXCOORD_0" : 96
+                        "POSITION" : 106,
+                        "NORMAL" : 107,
+                        "TEXCOORD_0" : 108
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 25,
+                            "bufferView" : 28,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1372,19 +1496,19 @@
                             }
                         }
                     },
-                    "indices" : 97,
+                    "indices" : 109,
                     "material" : 0,
                     "mode" : 4
                 },
                 {
                     "attributes" : {
-                        "POSITION" : 98,
-                        "NORMAL" : 99,
-                        "TEXCOORD_0" : 100
+                        "POSITION" : 110,
+                        "NORMAL" : 111,
+                        "TEXCOORD_0" : 112
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 26,
+                            "bufferView" : 29,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1399,78 +1523,8 @@
             ]
         },
         {
-            "name" : "Blinds",
+            "name" : "Bottom",
             "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 101,
-                        "NORMAL" : 102,
-                        "TEXCOORD_0" : 103
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 27,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 104,
-                    "material" : 1,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Blinds_HitBox",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 105,
-                        "NORMAL" : 106,
-                        "TEXCOORD_0" : 107
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 28,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 108,
-                    "material" : 2,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Cube",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 109,
-                        "NORMAL" : 110,
-                        "TEXCOORD_0" : 111
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 29,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 112,
-                    "material" : 1,
-                    "mode" : 4
-                },
                 {
                     "attributes" : {
                         "POSITION" : 113,
@@ -1488,13 +1542,13 @@
                         }
                     },
                     "indices" : 116,
-                    "material" : 0,
+                    "material" : 1,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Laptop_CTV",
+            "name" : "StringL",
             "primitives" : [
                 {
                     "attributes" : {
@@ -1505,6 +1559,151 @@
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
                             "bufferView" : 31,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 120,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "StringR",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 121,
+                        "NORMAL" : 122,
+                        "TEXCOORD_0" : 123
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 32,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 124,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Top",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 125,
+                        "NORMAL" : 126,
+                        "TEXCOORD_0" : 127
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 33,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 128,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Blinds_HitBox",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 129,
+                        "NORMAL" : 130,
+                        "TEXCOORD_0" : 131
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 34,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 132,
+                    "material" : 2,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Cube",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 133,
+                        "NORMAL" : 134,
+                        "TEXCOORD_0" : 135
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 35,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 136,
+                    "material" : 1,
+                    "mode" : 4
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 137,
+                        "NORMAL" : 138,
+                        "TEXCOORD_0" : 139
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 36,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 140,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Laptop_CTV",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 141,
+                        "NORMAL" : 142,
+                        "TEXCOORD_0" : 143
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 37,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1523,13 +1722,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 120,
-                        "NORMAL" : 121,
-                        "TEXCOORD_0" : 122
+                        "POSITION" : 144,
+                        "NORMAL" : 145,
+                        "TEXCOORD_0" : 146
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 32,
+                            "bufferView" : 38,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1537,7 +1736,7 @@
                             }
                         }
                     },
-                    "indices" : 123,
+                    "indices" : 147,
                     "material" : 0,
                     "mode" : 4
                 }
@@ -1548,13 +1747,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 124,
-                        "NORMAL" : 125,
-                        "TEXCOORD_0" : 126
+                        "POSITION" : 148,
+                        "NORMAL" : 149,
+                        "TEXCOORD_0" : 150
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 33,
+                            "bufferView" : 39,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1568,13 +1767,13 @@
                 },
                 {
                     "attributes" : {
-                        "POSITION" : 127,
-                        "NORMAL" : 128,
-                        "TEXCOORD_0" : 129
+                        "POSITION" : 151,
+                        "NORMAL" : 152,
+                        "TEXCOORD_0" : 153
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 34,
+                            "bufferView" : 40,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1593,13 +1792,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 130,
-                        "NORMAL" : 131,
-                        "TEXCOORD_0" : 132
+                        "POSITION" : 154,
+                        "NORMAL" : 155,
+                        "TEXCOORD_0" : 156
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 35,
+                            "bufferView" : 41,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1607,19 +1806,19 @@
                             }
                         }
                     },
-                    "indices" : 133,
+                    "indices" : 157,
                     "material" : 1,
                     "mode" : 4
                 },
                 {
                     "attributes" : {
-                        "POSITION" : 134,
-                        "NORMAL" : 135,
-                        "TEXCOORD_0" : 136
+                        "POSITION" : 158,
+                        "NORMAL" : 159,
+                        "TEXCOORD_0" : 160
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 36,
+                            "bufferView" : 42,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1627,7 +1826,7 @@
                             }
                         }
                     },
-                    "indices" : 137,
+                    "indices" : 161,
                     "material" : 0,
                     "mode" : 4
                 }
@@ -1638,13 +1837,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 138,
-                        "NORMAL" : 139,
-                        "TEXCOORD_0" : 140
+                        "POSITION" : 162,
+                        "NORMAL" : 163,
+                        "TEXCOORD_0" : 164
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 37,
+                            "bufferView" : 43,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1652,19 +1851,19 @@
                             }
                         }
                     },
-                    "indices" : 141,
+                    "indices" : 165,
                     "material" : 1,
                     "mode" : 4
                 },
                 {
                     "attributes" : {
-                        "POSITION" : 142,
-                        "NORMAL" : 143,
-                        "TEXCOORD_0" : 144
+                        "POSITION" : 166,
+                        "NORMAL" : 167,
+                        "TEXCOORD_0" : 168
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 38,
+                            "bufferView" : 44,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1672,7 +1871,7 @@
                             }
                         }
                     },
-                    "indices" : 145,
+                    "indices" : 169,
                     "material" : 0,
                     "mode" : 4
                 }
@@ -1683,13 +1882,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 146,
-                        "NORMAL" : 147,
-                        "TEXCOORD_0" : 148
+                        "POSITION" : 170,
+                        "NORMAL" : 171,
+                        "TEXCOORD_0" : 172
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 39,
+                            "bufferView" : 45,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1697,7 +1896,7 @@
                             }
                         }
                     },
-                    "indices" : 149,
+                    "indices" : 173,
                     "material" : 1,
                     "mode" : 4
                 }
@@ -1708,13 +1907,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 150,
-                        "NORMAL" : 151,
-                        "TEXCOORD_0" : 152
+                        "POSITION" : 174,
+                        "NORMAL" : 175,
+                        "TEXCOORD_0" : 176
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 40,
+                            "bufferView" : 46,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1722,7 +1921,7 @@
                             }
                         }
                     },
-                    "indices" : 153,
+                    "indices" : 177,
                     "material" : 1,
                     "mode" : 4
                 }
@@ -1733,13 +1932,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 154,
-                        "NORMAL" : 155,
-                        "TEXCOORD_0" : 156
+                        "POSITION" : 178,
+                        "NORMAL" : 179,
+                        "TEXCOORD_0" : 180
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 41,
+                            "bufferView" : 47,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1758,13 +1957,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 157,
-                        "NORMAL" : 158,
-                        "TEXCOORD_0" : 159
+                        "POSITION" : 181,
+                        "NORMAL" : 182,
+                        "TEXCOORD_0" : 183
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 42,
+                            "bufferView" : 48,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1772,7 +1971,7 @@
                             }
                         }
                     },
-                    "indices" : 160,
+                    "indices" : 184,
                     "material" : 0,
                     "mode" : 4
                 }
@@ -1783,13 +1982,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 161,
-                        "NORMAL" : 162,
-                        "TEXCOORD_0" : 163
+                        "POSITION" : 185,
+                        "NORMAL" : 186,
+                        "TEXCOORD_0" : 187
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 43,
+                            "bufferView" : 49,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1803,13 +2002,13 @@
                 },
                 {
                     "attributes" : {
-                        "POSITION" : 164,
-                        "NORMAL" : 165,
-                        "TEXCOORD_0" : 166
+                        "POSITION" : 188,
+                        "NORMAL" : 189,
+                        "TEXCOORD_0" : 190
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 44,
+                            "bufferView" : 50,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -1825,141 +2024,6 @@
         },
         {
             "name" : "Bin",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 167,
-                        "NORMAL" : 168,
-                        "TEXCOORD_0" : 169
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 45,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 170,
-                    "material" : 0,
-                    "mode" : 4
-                },
-                {
-                    "attributes" : {
-                        "POSITION" : 171,
-                        "NORMAL" : 172,
-                        "TEXCOORD_0" : 173
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 46,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 174,
-                    "material" : 1,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Walls_Floor",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 175,
-                        "NORMAL" : 176,
-                        "TEXCOORD_0" : 177
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 47,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 178,
-                    "material" : 1,
-                    "mode" : 4
-                },
-                {
-                    "attributes" : {
-                        "POSITION" : 179,
-                        "NORMAL" : 180,
-                        "TEXCOORD_0" : 181
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 48,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 182,
-                    "material" : 0,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Rug",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 183,
-                        "NORMAL" : 184,
-                        "TEXCOORD_0" : 185
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 49,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 186,
-                    "material" : 0,
-                    "mode" : 4
-                },
-                {
-                    "attributes" : {
-                        "POSITION" : 187,
-                        "NORMAL" : 188,
-                        "TEXCOORD_0" : 189
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 50,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 190,
-                    "material" : 1,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Book_01",
             "primitives" : [
                 {
                     "attributes" : {
@@ -2004,7 +2068,7 @@
             ]
         },
         {
-            "name" : "CTV_005",
+            "name" : "Walls_Floor",
             "primitives" : [
                 {
                     "attributes" : {
@@ -2022,20 +2086,15 @@
                             }
                         }
                     },
-                    "indices" : 3,
-                    "material" : 0,
+                    "indices" : 202,
+                    "material" : 1,
                     "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Books",
-            "primitives" : [
+                },
                 {
                     "attributes" : {
-                        "POSITION" : 202,
-                        "NORMAL" : 203,
-                        "TEXCOORD_0" : 204
+                        "POSITION" : 203,
+                        "NORMAL" : 204,
+                        "TEXCOORD_0" : 205
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2047,20 +2106,20 @@
                             }
                         }
                     },
-                    "indices" : 205,
+                    "indices" : 206,
                     "material" : 0,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Books_Label",
+            "name" : "Rug",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 206,
-                        "NORMAL" : 207,
-                        "TEXCOORD_0" : 208
+                        "POSITION" : 207,
+                        "NORMAL" : 208,
+                        "TEXCOORD_0" : 209
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2072,15 +2131,15 @@
                             }
                         }
                     },
-                    "indices" : 46,
+                    "indices" : 210,
                     "material" : 0,
                     "mode" : 4
                 },
                 {
                     "attributes" : {
-                        "POSITION" : 209,
-                        "NORMAL" : 210,
-                        "TEXCOORD_0" : 211
+                        "POSITION" : 211,
+                        "NORMAL" : 212,
+                        "TEXCOORD_0" : 213
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2092,20 +2151,20 @@
                             }
                         }
                     },
-                    "indices" : 15,
+                    "indices" : 214,
                     "material" : 1,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Book_02",
+            "name" : "Book_01",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 212,
-                        "NORMAL" : 213,
-                        "TEXCOORD_0" : 214
+                        "POSITION" : 215,
+                        "NORMAL" : 216,
+                        "TEXCOORD_0" : 217
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2117,15 +2176,15 @@
                             }
                         }
                     },
-                    "indices" : 215,
+                    "indices" : 218,
                     "material" : 0,
                     "mode" : 4
                 },
                 {
                     "attributes" : {
-                        "POSITION" : 216,
-                        "NORMAL" : 217,
-                        "TEXCOORD_0" : 218
+                        "POSITION" : 219,
+                        "NORMAL" : 220,
+                        "TEXCOORD_0" : 221
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2137,20 +2196,20 @@
                             }
                         }
                     },
-                    "indices" : 219,
+                    "indices" : 222,
                     "material" : 1,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Art_CTV",
+            "name" : "CTV_005",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 220,
-                        "NORMAL" : 221,
-                        "TEXCOORD_0" : 222
+                        "POSITION" : 223,
+                        "NORMAL" : 224,
+                        "TEXCOORD_0" : 225
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2169,13 +2228,13 @@
             ]
         },
         {
-            "name" : "Art_Text",
+            "name" : "Books",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 223,
-                        "NORMAL" : 224,
-                        "TEXCOORD_0" : 225
+                        "POSITION" : 226,
+                        "NORMAL" : 227,
+                        "TEXCOORD_0" : 228
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2187,20 +2246,20 @@
                             }
                         }
                     },
-                    "indices" : 226,
+                    "indices" : 229,
                     "material" : 0,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Art_Label",
+            "name" : "Books_Label",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 227,
-                        "NORMAL" : 228,
-                        "TEXCOORD_0" : 229
+                        "POSITION" : 230,
+                        "NORMAL" : 231,
+                        "TEXCOORD_0" : 232
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2218,9 +2277,9 @@
                 },
                 {
                     "attributes" : {
-                        "POSITION" : 230,
-                        "NORMAL" : 231,
-                        "TEXCOORD_0" : 232
+                        "POSITION" : 233,
+                        "NORMAL" : 234,
+                        "TEXCOORD_0" : 235
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2239,13 +2298,13 @@
             ]
         },
         {
-            "name" : "Wall_Art",
+            "name" : "Book_02",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 233,
-                        "NORMAL" : 234,
-                        "TEXCOORD_0" : 235
+                        "POSITION" : 236,
+                        "NORMAL" : 237,
+                        "TEXCOORD_0" : 238
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2257,15 +2316,15 @@
                             }
                         }
                     },
-                    "indices" : 236,
-                    "material" : 1,
+                    "indices" : 239,
+                    "material" : 0,
                     "mode" : 4
                 },
                 {
                     "attributes" : {
-                        "POSITION" : 237,
-                        "NORMAL" : 238,
-                        "TEXCOORD_0" : 239
+                        "POSITION" : 240,
+                        "NORMAL" : 241,
+                        "TEXCOORD_0" : 242
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2277,20 +2336,20 @@
                             }
                         }
                     },
-                    "indices" : 240,
-                    "material" : 0,
+                    "indices" : 243,
+                    "material" : 1,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Art_HitBox",
+            "name" : "Art_CTV",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 241,
-                        "NORMAL" : 242,
-                        "TEXCOORD_0" : 243
+                        "POSITION" : 244,
+                        "NORMAL" : 245,
+                        "TEXCOORD_0" : 246
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2302,20 +2361,20 @@
                             }
                         }
                     },
-                    "indices" : 108,
-                    "material" : 1,
+                    "indices" : 3,
+                    "material" : 0,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Sun01",
+            "name" : "Art_Text",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 244,
-                        "NORMAL" : 245,
-                        "TEXCOORD_0" : 246
+                        "POSITION" : 247,
+                        "NORMAL" : 248,
+                        "TEXCOORD_0" : 249
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2327,20 +2386,20 @@
                             }
                         }
                     },
-                    "indices" : 247,
+                    "indices" : 250,
                     "material" : 0,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Lines",
+            "name" : "Art_Label",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 248,
-                        "NORMAL" : 249,
-                        "TEXCOORD_0" : 250
+                        "POSITION" : 251,
+                        "NORMAL" : 252,
+                        "TEXCOORD_0" : 253
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2352,20 +2411,15 @@
                             }
                         }
                     },
-                    "indices" : 251,
-                    "material" : 1,
+                    "indices" : 46,
+                    "material" : 0,
                     "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Record",
-            "primitives" : [
+                },
                 {
                     "attributes" : {
-                        "POSITION" : 252,
-                        "NORMAL" : 253,
-                        "TEXCOORD_0" : 254
+                        "POSITION" : 254,
+                        "NORMAL" : 255,
+                        "TEXCOORD_0" : 256
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2377,15 +2431,20 @@
                             }
                         }
                     },
-                    "indices" : 255,
+                    "indices" : 15,
                     "material" : 1,
                     "mode" : 4
-                },
+                }
+            ]
+        },
+        {
+            "name" : "Wall_Art",
+            "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 256,
-                        "NORMAL" : 257,
-                        "TEXCOORD_0" : 258
+                        "POSITION" : 257,
+                        "NORMAL" : 258,
+                        "TEXCOORD_0" : 259
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2397,20 +2456,15 @@
                             }
                         }
                     },
-                    "indices" : 259,
-                    "material" : 0,
+                    "indices" : 260,
+                    "material" : 1,
                     "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Arm",
-            "primitives" : [
+                },
                 {
                     "attributes" : {
-                        "POSITION" : 260,
-                        "NORMAL" : 261,
-                        "TEXCOORD_0" : 262
+                        "POSITION" : 261,
+                        "NORMAL" : 262,
+                        "TEXCOORD_0" : 263
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2422,20 +2476,20 @@
                             }
                         }
                     },
-                    "indices" : 263,
-                    "material" : 1,
+                    "indices" : 264,
+                    "material" : 0,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Sun02",
+            "name" : "Art_HitBox",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 264,
-                        "NORMAL" : 265,
-                        "TEXCOORD_0" : 266
+                        "POSITION" : 265,
+                        "NORMAL" : 266,
+                        "TEXCOORD_0" : 267
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2447,7 +2501,152 @@
                             }
                         }
                     },
-                    "indices" : 247,
+                    "indices" : 132,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Sun01",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 268,
+                        "NORMAL" : 269,
+                        "TEXCOORD_0" : 270
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 72,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 271,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Lines",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 272,
+                        "NORMAL" : 273,
+                        "TEXCOORD_0" : 274
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 73,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 275,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Record",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 276,
+                        "NORMAL" : 277,
+                        "TEXCOORD_0" : 278
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 74,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 279,
+                    "material" : 1,
+                    "mode" : 4
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 280,
+                        "NORMAL" : 281,
+                        "TEXCOORD_0" : 282
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 75,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 283,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Arm",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 284,
+                        "NORMAL" : 285,
+                        "TEXCOORD_0" : 286
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 76,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 287,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Sun02",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 288,
+                        "NORMAL" : 289,
+                        "TEXCOORD_0" : 290
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 77,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 271,
                     "material" : 0,
                     "mode" : 4
                 }
@@ -2458,13 +2657,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 267,
-                        "NORMAL" : 268,
-                        "TEXCOORD_0" : 269
+                        "POSITION" : 291,
+                        "NORMAL" : 292,
+                        "TEXCOORD_0" : 293
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 72,
+                            "bufferView" : 78,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -2483,13 +2682,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 270,
-                        "NORMAL" : 271,
-                        "TEXCOORD_0" : 272
+                        "POSITION" : 294,
+                        "NORMAL" : 295,
+                        "TEXCOORD_0" : 296
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 73,
+                            "bufferView" : 79,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -2497,7 +2696,7 @@
                             }
                         }
                     },
-                    "indices" : 273,
+                    "indices" : 297,
                     "material" : 0,
                     "mode" : 4
                 }
@@ -2508,13 +2707,13 @@
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 274,
-                        "NORMAL" : 275,
-                        "TEXCOORD_0" : 276
+                        "POSITION" : 298,
+                        "NORMAL" : 299,
+                        "TEXCOORD_0" : 300
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 74,
+                            "bufferView" : 80,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -2522,19 +2721,19 @@
                             }
                         }
                     },
-                    "indices" : 277,
+                    "indices" : 301,
                     "material" : 0,
                     "mode" : 4
                 },
                 {
                     "attributes" : {
-                        "POSITION" : 278,
-                        "NORMAL" : 279,
-                        "TEXCOORD_0" : 280
+                        "POSITION" : 302,
+                        "NORMAL" : 303,
+                        "TEXCOORD_0" : 304
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
-                            "bufferView" : 75,
+                            "bufferView" : 81,
                             "attributes" : {
                                 "POSITION" : 0,
                                 "NORMAL" : 1,
@@ -2550,151 +2749,6 @@
         },
         {
             "name" : "lhand",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 281,
-                        "NORMAL" : 282,
-                        "TEXCOORD_0" : 283
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 76,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 284,
-                    "material" : 0,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "shand",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 285,
-                        "NORMAL" : 286,
-                        "TEXCOORD_0" : 287
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 77,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 288,
-                    "material" : 0,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "cbody",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 289,
-                        "NORMAL" : 290,
-                        "TEXCOORD_0" : 291
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 78,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 292,
-                    "material" : 0,
-                    "mode" : 4
-                },
-                {
-                    "attributes" : {
-                        "POSITION" : 293,
-                        "NORMAL" : 294,
-                        "TEXCOORD_0" : 295
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 79,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 296,
-                    "material" : 1,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Hello",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 297,
-                        "NORMAL" : 298,
-                        "TEXCOORD_0" : 299
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 80,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 300,
-                    "material" : 0,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Im_Trevor",
-            "primitives" : [
-                {
-                    "attributes" : {
-                        "POSITION" : 301,
-                        "NORMAL" : 302,
-                        "TEXCOORD_0" : 303
-                    },
-                    "extensions" : {
-                        "KHR_draco_mesh_compression" : {
-                            "bufferView" : 81,
-                            "attributes" : {
-                                "POSITION" : 0,
-                                "NORMAL" : 1,
-                                "TEXCOORD_0" : 2
-                            }
-                        }
-                    },
-                    "indices" : 304,
-                    "material" : 0,
-                    "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "I_Create",
             "primitives" : [
                 {
                     "attributes" : {
@@ -2719,7 +2773,7 @@
             ]
         },
         {
-            "name" : "Look_Around",
+            "name" : "shand",
             "primitives" : [
                 {
                     "attributes" : {
@@ -2744,7 +2798,7 @@
             ]
         },
         {
-            "name" : "Circle1",
+            "name" : "cbody",
             "primitives" : [
                 {
                     "attributes" : {
@@ -2765,12 +2819,7 @@
                     "indices" : 316,
                     "material" : 0,
                     "mode" : 4
-                }
-            ]
-        },
-        {
-            "name" : "Circle2",
-            "primitives" : [
+                },
                 {
                     "attributes" : {
                         "POSITION" : 317,
@@ -2787,20 +2836,20 @@
                             }
                         }
                     },
-                    "indices" : 316,
-                    "material" : 0,
+                    "indices" : 320,
+                    "material" : 1,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Glasses_CTV",
+            "name" : "Hello",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 320,
-                        "NORMAL" : 321,
-                        "TEXCOORD_0" : 322
+                        "POSITION" : 321,
+                        "NORMAL" : 322,
+                        "TEXCOORD_0" : 323
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2812,20 +2861,20 @@
                             }
                         }
                     },
-                    "indices" : 3,
+                    "indices" : 324,
                     "material" : 0,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Glasses_Text",
+            "name" : "Im_Trevor",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 323,
-                        "NORMAL" : 324,
-                        "TEXCOORD_0" : 325
+                        "POSITION" : 325,
+                        "NORMAL" : 326,
+                        "TEXCOORD_0" : 327
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2837,20 +2886,20 @@
                             }
                         }
                     },
-                    "indices" : 326,
+                    "indices" : 328,
                     "material" : 0,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Glasses_Label",
+            "name" : "I_Create",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 327,
-                        "NORMAL" : 328,
-                        "TEXCOORD_0" : 329
+                        "POSITION" : 329,
+                        "NORMAL" : 330,
+                        "TEXCOORD_0" : 331
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2862,15 +2911,20 @@
                             }
                         }
                     },
-                    "indices" : 46,
+                    "indices" : 332,
                     "material" : 0,
                     "mode" : 4
-                },
+                }
+            ]
+        },
+        {
+            "name" : "Look_Around",
+            "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 330,
-                        "NORMAL" : 331,
-                        "TEXCOORD_0" : 332
+                        "POSITION" : 333,
+                        "NORMAL" : 334,
+                        "TEXCOORD_0" : 335
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2882,20 +2936,20 @@
                             }
                         }
                     },
-                    "indices" : 15,
-                    "material" : 1,
+                    "indices" : 336,
+                    "material" : 0,
                     "mode" : 4
                 }
             ]
         },
         {
-            "name" : "Glasses",
+            "name" : "Circle1",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 333,
-                        "NORMAL" : 334,
-                        "TEXCOORD_0" : 335
+                        "POSITION" : 337,
+                        "NORMAL" : 338,
+                        "TEXCOORD_0" : 339
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2907,15 +2961,20 @@
                             }
                         }
                     },
-                    "indices" : 336,
-                    "material" : 1,
+                    "indices" : 340,
+                    "material" : 0,
                     "mode" : 4
-                },
+                }
+            ]
+        },
+        {
+            "name" : "Circle2",
+            "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 337,
-                        "NORMAL" : 338,
-                        "TEXCOORD_0" : 339
+                        "POSITION" : 341,
+                        "NORMAL" : 342,
+                        "TEXCOORD_0" : 343
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2934,13 +2993,13 @@
             ]
         },
         {
-            "name" : "Plane.003",
+            "name" : "Glasses_CTV",
             "primitives" : [
                 {
                     "attributes" : {
-                        "POSITION" : 341,
-                        "NORMAL" : 342,
-                        "TEXCOORD_0" : 343
+                        "POSITION" : 344,
+                        "NORMAL" : 345,
+                        "TEXCOORD_0" : 346
                     },
                     "extensions" : {
                         "KHR_draco_mesh_compression" : {
@@ -2952,7 +3011,147 @@
                             }
                         }
                     },
-                    "indices" : 108,
+                    "indices" : 3,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Glasses_Text",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 347,
+                        "NORMAL" : 348,
+                        "TEXCOORD_0" : 349
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 93,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 350,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Glasses_Label",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 351,
+                        "NORMAL" : 352,
+                        "TEXCOORD_0" : 353
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 94,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 46,
+                    "material" : 0,
+                    "mode" : 4
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 354,
+                        "NORMAL" : 355,
+                        "TEXCOORD_0" : 356
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 95,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 15,
+                    "material" : 1,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Glasses",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 357,
+                        "NORMAL" : 358,
+                        "TEXCOORD_0" : 359
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 96,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 360,
+                    "material" : 1,
+                    "mode" : 4
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 361,
+                        "NORMAL" : 362,
+                        "TEXCOORD_0" : 363
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 97,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 364,
+                    "material" : 0,
+                    "mode" : 4
+                }
+            ]
+        },
+        {
+            "name" : "Plane.003",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 365,
+                        "NORMAL" : 366,
+                        "TEXCOORD_0" : 367
+                    },
+                    "extensions" : {
+                        "KHR_draco_mesh_compression" : {
+                            "bufferView" : 98,
+                            "attributes" : {
+                                "POSITION" : 0,
+                                "NORMAL" : 1,
+                                "TEXCOORD_0" : 2
+                            }
+                        }
+                    },
+                    "indices" : 132,
                     "material" : 2,
                     "mode" : 4
                 }
@@ -3597,10 +3796,10 @@
         },
         {
             "componentType" : 5126,
-            "count" : 1785,
+            "count" : 774,
             "max" : [
                 -0.5734966397285461,
-                0.5935355424880981,
+                0.5934527516365051,
                 -0.3970963656902313
             ],
             "min" : [
@@ -3612,17 +3811,107 @@
         },
         {
             "componentType" : 5126,
-            "count" : 1785,
+            "count" : 774,
             "type" : "VEC3"
         },
         {
             "componentType" : 5126,
-            "count" : 1785,
+            "count" : 774,
             "type" : "VEC2"
         },
         {
             "componentType" : 5123,
-            "count" : 1785,
+            "count" : 774,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 1011,
+            "max" : [
+                0.004408743232488632,
+                0.00020116324594710022,
+                0.003749751951545477
+            ],
+            "min" : [
+                -0.0043954504653811455,
+                -0.0007584640989080071,
+                -0.009410456754267216
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 1011,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 1011,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 1011,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 32,
+            "max" : [
+                -0.5841773152351379,
+                0.5934392809867859,
+                -0.40295618772506714
+            ],
+            "min" : [
+                -0.5983152985572815,
+                0.5928256511688232,
+                -0.4145973026752472
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 32,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 32,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 90,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                0.2154032438993454,
+                0.0005481243133544922,
+                0.010945796966552734
+            ],
+            "min" : [
+                -0.2154032588005066,
+                -0.0005481243133544922,
+                -0.010945916175842285
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 36,
             "type" : "SCALAR"
         },
         {
@@ -3737,10 +4026,10 @@
         },
         {
             "componentType" : 5126,
-            "count" : 744,
+            "count" : 24,
             "max" : [
                 0.18204286694526672,
-                1.263152003288269,
+                0.6667314171791077,
                 -0.9357743859291077
             ],
             "min" : [
@@ -3752,17 +4041,107 @@
         },
         {
             "componentType" : 5126,
-            "count" : 744,
+            "count" : 24,
             "type" : "VEC3"
         },
         {
             "componentType" : 5126,
-            "count" : 744,
+            "count" : 24,
             "type" : "VEC2"
         },
         {
             "componentType" : 5123,
-            "count" : 1116,
+            "count" : 36,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 48,
+            "max" : [
+                -0.22100822627544403,
+                1.2468640804290771,
+                -0.9488645195960999
+            ],
+            "min" : [
+                -0.22242243587970734,
+                0.6629245281219482,
+                -0.9508645534515381
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 48,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 48,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 72,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 48,
+            "max" : [
+                0.11816151440143585,
+                1.2468640804290771,
+                -0.9488645195960999
+            ],
+            "min" : [
+                0.11674730479717255,
+                0.6629245281219482,
+                -0.9508645534515381
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 48,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 48,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 72,
+            "type" : "SCALAR"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 24,
+            "max" : [
+                0.18204286694526672,
+                1.263152003288269,
+                -0.9357743859291077
+            ],
+            "min" : [
+                -0.27838587760925293,
+                1.2412604093551636,
+                -0.9576660990715027
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC3"
+        },
+        {
+            "componentType" : 5126,
+            "count" : 24,
+            "type" : "VEC2"
+        },
+        {
+            "componentType" : 5123,
+            "count" : 36,
             "type" : "SCALAR"
         },
         {
@@ -5724,363 +6103,393 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 14120,
+            "byteLength" : 4179,
             "byteOffset" : 334740
         },
         {
             "buffer" : 0,
+            "byteLength" : 8698,
+            "byteOffset" : 338920
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 408,
+            "byteOffset" : 347620
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 338,
+            "byteOffset" : 348028
+        },
+        {
+            "buffer" : 0,
             "byteLength" : 16420,
-            "byteOffset" : 348860
+            "byteOffset" : 348368
         },
         {
             "buffer" : 0,
             "byteLength" : 3127,
-            "byteOffset" : 365280
+            "byteOffset" : 364788
         },
         {
             "buffer" : 0,
             "byteLength" : 421,
-            "byteOffset" : 368408
+            "byteOffset" : 367916
         },
         {
             "buffer" : 0,
             "byteLength" : 240,
-            "byteOffset" : 368832
+            "byteOffset" : 368340
         },
         {
             "buffer" : 0,
-            "byteLength" : 2214,
-            "byteOffset" : 369072
+            "byteLength" : 329,
+            "byteOffset" : 368580
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 450,
+            "byteOffset" : 368912
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 438,
+            "byteOffset" : 369364
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 334,
+            "byteOffset" : 369804
         },
         {
             "buffer" : 0,
             "byteLength" : 195,
-            "byteOffset" : 371288
+            "byteOffset" : 370140
         },
         {
             "buffer" : 0,
             "byteLength" : 4527,
-            "byteOffset" : 371484
+            "byteOffset" : 370336
         },
         {
             "buffer" : 0,
             "byteLength" : 14072,
-            "byteOffset" : 376012
+            "byteOffset" : 374864
         },
         {
             "buffer" : 0,
             "byteLength" : 16420,
-            "byteOffset" : 390084
+            "byteOffset" : 388936
         },
         {
             "buffer" : 0,
             "byteLength" : 6423,
-            "byteOffset" : 406504
+            "byteOffset" : 405356
         },
         {
             "buffer" : 0,
             "byteLength" : 418,
-            "byteOffset" : 412928
+            "byteOffset" : 411780
         },
         {
             "buffer" : 0,
             "byteLength" : 240,
-            "byteOffset" : 413348
+            "byteOffset" : 412200
         },
         {
             "buffer" : 0,
             "byteLength" : 10007,
-            "byteOffset" : 413588
+            "byteOffset" : 412440
         },
         {
             "buffer" : 0,
             "byteLength" : 706,
-            "byteOffset" : 423596
+            "byteOffset" : 422448
         },
         {
             "buffer" : 0,
             "byteLength" : 6007,
-            "byteOffset" : 424304
+            "byteOffset" : 423156
         },
         {
             "buffer" : 0,
             "byteLength" : 1242,
-            "byteOffset" : 430312
+            "byteOffset" : 429164
         },
         {
             "buffer" : 0,
             "byteLength" : 553,
-            "byteOffset" : 431556
+            "byteOffset" : 430408
         },
         {
             "buffer" : 0,
             "byteLength" : 40643,
-            "byteOffset" : 432112
+            "byteOffset" : 430964
         },
         {
             "buffer" : 0,
             "byteLength" : 16420,
-            "byteOffset" : 472756
+            "byteOffset" : 471608
         },
         {
             "buffer" : 0,
             "byteLength" : 8863,
-            "byteOffset" : 489176
+            "byteOffset" : 488028
         },
         {
             "buffer" : 0,
             "byteLength" : 419,
-            "byteOffset" : 498040
+            "byteOffset" : 496892
         },
         {
             "buffer" : 0,
             "byteLength" : 240,
-            "byteOffset" : 498460
+            "byteOffset" : 497312
         },
         {
             "buffer" : 0,
             "byteLength" : 2374,
-            "byteOffset" : 498700
+            "byteOffset" : 497552
         },
         {
             "buffer" : 0,
             "byteLength" : 2161,
-            "byteOffset" : 501076
+            "byteOffset" : 499928
         },
         {
             "buffer" : 0,
             "byteLength" : 1190,
-            "byteOffset" : 503240
+            "byteOffset" : 502092
         },
         {
             "buffer" : 0,
             "byteLength" : 859,
-            "byteOffset" : 504432
+            "byteOffset" : 503284
         },
         {
             "buffer" : 0,
             "byteLength" : 3889,
-            "byteOffset" : 505292
+            "byteOffset" : 504144
         },
         {
             "buffer" : 0,
             "byteLength" : 298,
-            "byteOffset" : 509184
+            "byteOffset" : 508036
         },
         {
             "buffer" : 0,
             "byteLength" : 2365,
-            "byteOffset" : 509484
+            "byteOffset" : 508336
         },
         {
             "buffer" : 0,
             "byteLength" : 1028,
-            "byteOffset" : 511852
+            "byteOffset" : 510704
         },
         {
             "buffer" : 0,
             "byteLength" : 16420,
-            "byteOffset" : 512880
+            "byteOffset" : 511732
         },
         {
             "buffer" : 0,
             "byteLength" : 6204,
-            "byteOffset" : 529300
+            "byteOffset" : 528152
         },
         {
             "buffer" : 0,
             "byteLength" : 418,
-            "byteOffset" : 535504
+            "byteOffset" : 534356
         },
         {
             "buffer" : 0,
             "byteLength" : 240,
-            "byteOffset" : 535924
+            "byteOffset" : 534776
         },
         {
             "buffer" : 0,
             "byteLength" : 2333,
-            "byteOffset" : 536164
+            "byteOffset" : 535016
         },
         {
             "buffer" : 0,
             "byteLength" : 1031,
-            "byteOffset" : 538500
+            "byteOffset" : 537352
         },
         {
             "buffer" : 0,
             "byteLength" : 16420,
-            "byteOffset" : 539532
+            "byteOffset" : 538384
         },
         {
             "buffer" : 0,
             "byteLength" : 6223,
-            "byteOffset" : 555952
+            "byteOffset" : 554804
         },
         {
             "buffer" : 0,
             "byteLength" : 419,
-            "byteOffset" : 562176
+            "byteOffset" : 561028
         },
         {
             "buffer" : 0,
             "byteLength" : 241,
-            "byteOffset" : 562596
+            "byteOffset" : 561448
         },
         {
             "buffer" : 0,
             "byteLength" : 274,
-            "byteOffset" : 562840
+            "byteOffset" : 561692
         },
         {
             "buffer" : 0,
             "byteLength" : 811,
-            "byteOffset" : 563116
+            "byteOffset" : 561968
         },
         {
             "buffer" : 0,
             "byteLength" : 199,
-            "byteOffset" : 563928
+            "byteOffset" : 562780
         },
         {
             "buffer" : 0,
             "byteLength" : 4915,
-            "byteOffset" : 564128
+            "byteOffset" : 562980
         },
         {
             "buffer" : 0,
             "byteLength" : 42886,
-            "byteOffset" : 569044
+            "byteOffset" : 567896
         },
         {
             "buffer" : 0,
             "byteLength" : 756,
-            "byteOffset" : 611932
+            "byteOffset" : 610784
         },
         {
             "buffer" : 0,
             "byteLength" : 755,
-            "byteOffset" : 612688
+            "byteOffset" : 611540
         },
         {
             "buffer" : 0,
             "byteLength" : 343,
-            "byteOffset" : 613444
+            "byteOffset" : 612296
         },
         {
             "buffer" : 0,
             "byteLength" : 4915,
-            "byteOffset" : 613788
+            "byteOffset" : 612640
         },
         {
             "buffer" : 0,
             "byteLength" : 16420,
-            "byteOffset" : 618704
+            "byteOffset" : 617556
         },
         {
             "buffer" : 0,
             "byteLength" : 4315,
-            "byteOffset" : 635124
+            "byteOffset" : 633976
         },
         {
             "buffer" : 0,
             "byteLength" : 419,
-            "byteOffset" : 639440
+            "byteOffset" : 638292
         },
         {
             "buffer" : 0,
             "byteLength" : 240,
-            "byteOffset" : 639860
+            "byteOffset" : 638712
         },
         {
             "buffer" : 0,
             "byteLength" : 275,
-            "byteOffset" : 640100
+            "byteOffset" : 638952
         },
         {
             "buffer" : 0,
             "byteLength" : 328,
-            "byteOffset" : 640376
+            "byteOffset" : 639228
         },
         {
             "buffer" : 0,
             "byteLength" : 47907,
-            "byteOffset" : 640704
+            "byteOffset" : 639556
         },
         {
             "buffer" : 0,
             "byteLength" : 24070,
-            "byteOffset" : 688612
+            "byteOffset" : 687464
         },
         {
             "buffer" : 0,
             "byteLength" : 7543,
-            "byteOffset" : 712684
+            "byteOffset" : 711536
         },
         {
             "buffer" : 0,
             "byteLength" : 9933,
-            "byteOffset" : 720228
+            "byteOffset" : 719080
         },
         {
             "buffer" : 0,
             "byteLength" : 23432,
-            "byteOffset" : 730164
+            "byteOffset" : 729016
         },
         {
             "buffer" : 0,
             "byteLength" : 38987,
-            "byteOffset" : 753596
+            "byteOffset" : 752448
         },
         {
             "buffer" : 0,
             "byteLength" : 52069,
-            "byteOffset" : 792584
+            "byteOffset" : 791436
         },
         {
             "buffer" : 0,
             "byteLength" : 52069,
-            "byteOffset" : 844656
+            "byteOffset" : 843508
         },
         {
             "buffer" : 0,
             "byteLength" : 16420,
-            "byteOffset" : 896728
+            "byteOffset" : 895580
         },
         {
             "buffer" : 0,
             "byteLength" : 3976,
-            "byteOffset" : 913148
+            "byteOffset" : 912000
         },
         {
             "buffer" : 0,
             "byteLength" : 418,
-            "byteOffset" : 917124
+            "byteOffset" : 915976
         },
         {
             "buffer" : 0,
             "byteLength" : 240,
-            "byteOffset" : 917544
+            "byteOffset" : 916396
         },
         {
             "buffer" : 0,
             "byteLength" : 14901,
-            "byteOffset" : 917784
+            "byteOffset" : 916636
         },
         {
             "buffer" : 0,
             "byteLength" : 563,
-            "byteOffset" : 932688
+            "byteOffset" : 931540
         },
         {
             "buffer" : 0,
             "byteLength" : 193,
-            "byteOffset" : 933252
+            "byteOffset" : 932104
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 933448,
+            "byteLength" : 932300,
             "uri" : "iso-poly.bin"
         }
     ]
