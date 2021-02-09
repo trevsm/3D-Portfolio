@@ -19,6 +19,17 @@ export function Soda({ materials, nodes, setItems }) {
     config: defaultConfig,
   })
 
+  const ani = useSpring({
+    rot: label ? [.5, 0, 0] : [0, 0, 0],
+    pos: label ? [0, 0, 0] : [0, -.001, 0],
+    config: {
+      mass: 0.1,
+      tension: 400,
+      friction: 10,
+      precision: 0.0001,
+    },
+  })
+
   const Overlay = (
     <div>
       <h1 className="title">Soda</h1>
@@ -57,6 +68,17 @@ export function Soda({ materials, nodes, setItems }) {
           geometry={nodes.Can_1.geometry}
         />
       </group>
+      <a.mesh
+        material={materials.Default_Color}
+        geometry={nodes.Tab.geometry}
+        position={[-0.5912, 0.5937, -0.4148]}
+        rotation={ani.rot}
+      />
+      <a.mesh
+        material={materials.Default_Color}
+        geometry={nodes.Hole.geometry}
+        position={ani.pos}
+      />
       <group visible={label}>
         <mesh
           material={materials.Default_Color}

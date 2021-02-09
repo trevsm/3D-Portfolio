@@ -70,7 +70,7 @@ export default function App() {
         pixelRatio={window.devicePixelRatio}
         camera={{ position: [0, 2, 4] }}
       >
-        <OrbitControls />
+        {/* <OrbitControls /> */}
         <ambientLight intensity={0.9} />
         <directionalLight intensity={0.5} />
         <Suspense fallback={<Loader />}>

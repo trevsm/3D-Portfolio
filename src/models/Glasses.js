@@ -19,6 +19,16 @@ export function Glasses({ materials, nodes, setItems }) {
     config: defaultConfig,
   })
 
+  const ani = useSpring({
+    pos: label ? [0, 0.01, 0] : [0, 0, 0],
+    config: {
+      mass: 0.1,
+      tension: 50,
+      friction: 10,
+      precision: 0.0001,
+    },
+  })
+
   const Overlay = (
     <div>
       <h1 className="title">Vision</h1>
@@ -51,14 +61,16 @@ export function Glasses({ materials, nodes, setItems }) {
           setItems(Overlay)
         }}
       />
-      <mesh
-        material={materials.Default_White}
-        geometry={nodes.Glasses_1.geometry}
-      />
-      <mesh
-        material={materials.Default_Color}
-        geometry={nodes.Glasses_2.geometry}
-      />
+      <a.group position={ani.pos}>
+        <mesh
+          material={materials.Default_White}
+          geometry={nodes.Glasses_1.geometry}
+        />
+        <mesh
+          material={materials.Default_Color}
+          geometry={nodes.Glasses_2.geometry}
+        />
+      </a.group>
       <group visible={label}>
         <mesh
           material={materials.Default_Color}
