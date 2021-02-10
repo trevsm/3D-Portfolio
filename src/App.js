@@ -77,7 +77,7 @@ export default function App() {
           <Models setItems={setItems} />
         </Suspense>
         <EffectComposer>
-          <Noise opacity={0.03} />
+          <Noise opacity={0.01} />
         </EffectComposer>
         <CustomCamera />
       </Canvas>
