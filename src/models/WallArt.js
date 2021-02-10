@@ -11,7 +11,8 @@ export function WallArt({ materials, nodes, setItems }) {
   const c1Ref = useRef()
   const c2Ref = useRef()
 
-  const idx = useRef(1.3)
+  const idx = useRef(1.15)
+  const tmp = useRef(1)
 
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
@@ -39,9 +40,9 @@ export function WallArt({ materials, nodes, setItems }) {
     armRef.current.rotation.x = Math.cos(idx.current) / 4 - 0.2
   }
 
-  function updateStringTransforms(){
-    c1Ref.current.rotation.y = idx.current/5
-    c2Ref.current.rotation.y = -idx.current/4.92
+  function updateStringTransforms() {
+    c1Ref.current.rotation.y = idx.current / 5
+    c2Ref.current.rotation.y = -idx.current / 5
   }
 
   useEffect(() => {
@@ -50,12 +51,18 @@ export function WallArt({ materials, nodes, setItems }) {
     updateStringTransforms()
   }, [])
 
-  useFrame(() => {
+  useFrame(({ clock }) => {
     if (label) {
-      idx.current += 0.01
+      if (!clock.running) clock.start()
+      idx.current = clock.elapsedTime * 1.5 + tmp.current
       updateSunTransforms()
       spinRecordAndArm()
       updateStringTransforms()
+    } else {
+      if (clock.running) {
+        tmp.current += clock.elapsedTime * 1.5
+        clock.stop()
+      }
     }
   })
 

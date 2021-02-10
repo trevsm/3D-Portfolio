@@ -16,8 +16,8 @@ export function Clock({ materials, nodes, setItems }) {
     </div>
   )
 
-  useFrame(({ clock }) => {
-    minHand.current.rotation.z = Math.floor(-clock.elapsedTime) / 10
+  useFrame(() => {
+    minHand.current.rotation.z -= .002
     hourHand.current.rotation.z = minHand.current.rotation.z / 10
   })
 
