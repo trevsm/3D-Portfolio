@@ -31,7 +31,7 @@ export function Glasses({ materials, nodes, setItems }) {
 
   const Overlay = (
     <div>
-      <h1 className="title">Vision</h1>
+      <h1 className="title">About</h1>
     </div>
   )
 

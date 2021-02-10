@@ -5826,32 +5826,32 @@
         },
         {
             "componentType" : 5126,
-            "count" : 555,
+            "count" : 429,
             "max" : [
-                0.12242759019136429,
+                0.12916161119937897,
                 0,
                 0.0004556858038995415
             ],
             "min" : [
                 0,
                 0,
-                -0.03453085944056511
+                -0.03473338484764099
             ],
             "type" : "VEC3"
         },
         {
             "componentType" : 5126,
-            "count" : 555,
+            "count" : 429,
             "type" : "VEC3"
         },
         {
             "componentType" : 5126,
-            "count" : 555,
+            "count" : 429,
             "type" : "VEC2"
         },
         {
             "componentType" : 5123,
-            "count" : 1152,
+            "count" : 951,
             "type" : "SCALAR"
         },
         {
@@ -6458,38 +6458,38 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 3976,
+            "byteLength" : 3327,
             "byteOffset" : 912000
         },
         {
             "buffer" : 0,
             "byteLength" : 418,
-            "byteOffset" : 915976
+            "byteOffset" : 915328
         },
         {
             "buffer" : 0,
             "byteLength" : 240,
-            "byteOffset" : 916396
+            "byteOffset" : 915748
         },
         {
             "buffer" : 0,
             "byteLength" : 14901,
-            "byteOffset" : 916636
+            "byteOffset" : 915988
         },
         {
             "buffer" : 0,
             "byteLength" : 563,
-            "byteOffset" : 931540
+            "byteOffset" : 930892
         },
         {
             "buffer" : 0,
             "byteLength" : 193,
-            "byteOffset" : 932104
+            "byteOffset" : 931456
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 932300,
+            "byteLength" : 931652,
             "uri" : "iso-poly.bin"
         }
     ]
