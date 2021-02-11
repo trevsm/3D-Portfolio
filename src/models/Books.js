@@ -40,7 +40,7 @@ export function Books({ materials, nodes, setItems }) {
         }}
         onClick={() => {
           window.open(
-            'https://docs.google.com/document/d/1e6f-k7lfMziLLrdIJ5BuhF68a8K_XiLHalsYcKwrxWg/edit?usp=sharing'
+            '/portfolio/Trevor_Smith.pdf'
           )
         }}
       >
