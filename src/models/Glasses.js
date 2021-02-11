@@ -45,10 +45,6 @@ export function Glasses({ materials, nodes, setItems }) {
             I am also a frontend software developer working for The Energy &
             Geoscience Institute at The University of Utah
           </p>
-          {/* <p>
-            I enjoy pursuing new ideas and learning through their challenges.
-            I'm excited for all the new challenges to come!
-          </p> */}
         </div>
         <div className="right">
           <img src={Profile} alt="Profile Picture" className="profile-pic" />
