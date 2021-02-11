@@ -5691,11 +5691,11 @@
         },
         {
             "componentType" : 5126,
-            "count" : 5304,
+            "count" : 4898,
             "max" : [
-                0.6367422342300415,
+                0.5400774478912354,
                 0,
-                0.0004882056382484734
+                0.0113507816568017
             ],
             "min" : [
                 0.00307438219897449,
@@ -5706,17 +5706,17 @@
         },
         {
             "componentType" : 5126,
-            "count" : 5304,
+            "count" : 4898,
             "type" : "VEC3"
         },
         {
             "componentType" : 5126,
-            "count" : 5304,
+            "count" : 4898,
             "type" : "VEC2"
         },
         {
             "componentType" : 5123,
-            "count" : 11814,
+            "count" : 10911,
             "type" : "SCALAR"
         },
         {
@@ -6438,63 +6438,63 @@
         },
         {
             "buffer" : 0,
-            "byteLength" : 23432,
+            "byteLength" : 22050,
             "byteOffset" : 727772
         },
         {
             "buffer" : 0,
             "byteLength" : 38987,
-            "byteOffset" : 751204
+            "byteOffset" : 749824
         },
         {
             "buffer" : 0,
             "byteLength" : 52069,
-            "byteOffset" : 790192
+            "byteOffset" : 788812
         },
         {
             "buffer" : 0,
             "byteLength" : 52069,
-            "byteOffset" : 842264
+            "byteOffset" : 840884
         },
         {
             "buffer" : 0,
             "byteLength" : 16420,
-            "byteOffset" : 894336
+            "byteOffset" : 892956
         },
         {
             "buffer" : 0,
             "byteLength" : 3327,
-            "byteOffset" : 910756
+            "byteOffset" : 909376
         },
         {
             "buffer" : 0,
             "byteLength" : 418,
-            "byteOffset" : 914084
+            "byteOffset" : 912704
         },
         {
             "buffer" : 0,
             "byteLength" : 240,
-            "byteOffset" : 914504
+            "byteOffset" : 913124
         },
         {
             "buffer" : 0,
             "byteLength" : 14901,
-            "byteOffset" : 914744
+            "byteOffset" : 913364
         },
         {
             "buffer" : 0,
             "byteLength" : 563,
-            "byteOffset" : 929648
+            "byteOffset" : 928268
         },
         {
             "buffer" : 0,
             "byteLength" : 193,
-            "byteOffset" : 930212
+            "byteOffset" : 928832
         }
     ],
     "buffers" : [
         {
-            "byteLength" : 930408,
+            "byteLength" : 929028,
             "uri" : "iso-poly.bin"
         }
     ]
