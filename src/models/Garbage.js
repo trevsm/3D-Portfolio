@@ -38,13 +38,13 @@ export function Garbage({ materials, nodes }) {
         onPointerLeave={() => {
           setLabel(false)
         }}
-        onClick={() => {
-          window.open('https://github.com/trevsm/portfolio');
-        }}
       >
         <mesh
           material={materials.Default_Color}
           geometry={nodes.Bin_1.geometry}
+          onClick={() => {
+            window.open('https://github.com/trevsm/portfolio')
+          }}
         />
         <mesh
           material={materials.Default_White}
