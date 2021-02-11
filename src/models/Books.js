@@ -38,15 +38,13 @@ export function Books({ materials, nodes, setItems }) {
         onPointerLeave={() => {
           setLabel(false)
         }}
-        onClick={() => {
-          window.open(
-            '/Trevor_Smith.pdf'
-          )
-        }}
       >
         <mesh
           material={materials.Default_Color}
           geometry={nodes.Book_02.geometry}
+          onClick={() => {
+            window.open('/Trevor_Smith.pdf')
+          }}
         />
         <mesh
           material={materials.Default_White}
