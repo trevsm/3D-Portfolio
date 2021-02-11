@@ -9,7 +9,7 @@ function OverlayContent() {
         <div className="tile short">
           <div className="tile-content">Linkedin</div>
           <div className="tile-bottom">
-            <a href="http://devices.red/" target="new">
+            <a href="https://www.linkedin.com/in/trevor-smith-27621613b/" target="new">
               visit page
             </a>
           </div>
@@ -17,7 +17,7 @@ function OverlayContent() {
         <div className="tile short">
           <div className="tile-content">Github</div>
           <div className="tile-bottom">
-            <a href="http://lostkey.host/" target="new">
+            <a href="https://github.com/trevsm" target="new">
               visit page
             </a>
           </div>
