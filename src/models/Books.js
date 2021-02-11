@@ -40,7 +40,7 @@ export function Books({ materials, nodes, setItems }) {
         }}
         onClick={() => {
           window.open(
-            '/portfolio/Trevor_Smith.pdf'
+            '/Trevor_Smith.pdf'
           )
         }}
       >
