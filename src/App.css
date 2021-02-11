@@ -83,3 +83,26 @@
   font-size: 17px;
   color: white;
 }
+
+/* About Overlay */
+
+.overlay .split {
+  display: flex;
+  padding: 20px;
+}
+
+.overlay .left,
+.overlay .right {
+  width: 50%;
+}
+
+img.profile-pic {
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 10px 10px 0px #6854ee2e;
+}
+
+.overlay .left p {
+  padding-bottom: 10px;
+  max-width: 400px;
+}

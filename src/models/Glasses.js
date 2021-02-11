@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import { useSpring } from '@react-spring/core'
 import { a } from '@react-spring/three'
 
+import Profile from '../static/profile.jpg'
+
 const defaultConfig = {
   mass: 5,
   tension: 400,
@@ -32,6 +34,26 @@ export function Glasses({ materials, nodes, setItems }) {
   const Overlay = (
     <div>
       <h1 className="title">About</h1>
+      <div className="split">
+        <div className="left">
+          <p>Hey! I'm Trevor Smith. </p>
+          <p>
+            I am currently a senior at Weber State University pursuing a
+            bachelor's degree in Computer Science.
+          </p>
+          <p>
+            I am also a frontend software developer working for The Energy &
+            Geoscience Institute at The University of Utah
+          </p>
+          {/* <p>
+            I enjoy pursuing new ideas and learning through their challenges.
+            I'm excited for all the new challenges to come!
+          </p> */}
+        </div>
+        <div className="right">
+          <img src={Profile} alt="Profile Picture" className="profile-pic" />
+        </div>
+      </div>
     </div>
   )
 
