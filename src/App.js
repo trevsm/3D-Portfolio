@@ -1,5 +1,5 @@
 import React, { Suspense, useRef, useState } from 'react'
-// import { EffectComposer, Noise } from 'react-postprocessing'
+import { EffectComposer, Noise } from 'react-postprocessing'
 import { Canvas } from 'react-three-fiber'
 import { Loader } from './components/Loader'
 import { CustomCamera } from './components/Camera'
