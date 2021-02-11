@@ -19,12 +19,6 @@ export function Books({ materials, nodes, setItems }) {
     config: defaultConfig,
   })
 
-  const Overlay = (
-    <div>
-      <h1 className="title">Education</h1>
-    </div>
-  )
-
   useEffect(() => {
     setTimeout(() => {
       setActive(true)
@@ -45,7 +39,9 @@ export function Books({ materials, nodes, setItems }) {
           setLabel(false)
         }}
         onClick={() => {
-          setItems(Overlay)
+          window.open(
+            'https://docs.google.com/document/d/1e6f-k7lfMziLLrdIJ5BuhF68a8K_XiLHalsYcKwrxWg/edit?usp=sharing'
+          )
         }}
       >
         <mesh
@@ -77,13 +73,13 @@ export function Books({ materials, nodes, setItems }) {
         <mesh
           material={materials.Default_Color}
           geometry={nodes.Books_Text.geometry}
-          position={[-0.81, 0.71, -0.59]}
+          position={[-0.79, 0.71, -0.59]}
           rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         >
           <mesh
             material={materials.Default_Color}
             geometry={nodes.Books_CTV.geometry}
-            position={[0.03, 0, 0.04]}
+            position={[0.01, 0, 0.04]}
           />
         </mesh>
       </group>

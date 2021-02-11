@@ -25,13 +25,13 @@ export function Clock({ materials, nodes, setItems }) {
     <group>
       <group
         onPointerEnter={() => {
-          setLabel(true)
+          // setLabel(true)
         }}
         onPointerLeave={() => {
-          setLabel(false)
+          // setLabel(false)
         }}
         onClick={() => {
-          setItems(Overlay)
+          // setItems(Overlay)
         }}
       >
         <mesh

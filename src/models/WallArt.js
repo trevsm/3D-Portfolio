@@ -1,6 +1,80 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { useFrame } from 'react-three-fiber'
 
+function OverlayContent() {
+  return (
+    <>
+      <h1 className="title">Interests</h1>
+      <div className="tile-grid">
+        <div className="tile">
+          <div className="tile-content">
+            Hiking <br />
+            <span className="description">
+              Utah's High Uintah Mountains are breathtaking! If you ever get a
+              chance to go, take a map and visit one of the unnamed lakes near
+              Mt. Marsell.
+            </span>
+          </div>
+        </div>
+        <div className="tile">
+          <div className="tile-content">
+            Writing <br />
+            <span className="description">
+              Poetry mostly; I've found that creating a piece, that resinates
+              with a reader, comes easier when you slow down and describe your
+              senses.
+            </span>
+          </div>
+        </div>
+        <div className="tile">
+          <div className="tile-content">
+            Swimming <br />
+            <span className="description">
+              Always loved the water since I was little. The weightlessness and
+              lack of sound at the bottom of the pool really lets me think.
+            </span>
+          </div>
+        </div>
+        <div className="tile">
+          <div className="tile-content">
+            3D Modeling <br />
+            <span className="description">
+              Originally, I started learning with CAD and 3D Printing the
+              result. Now, I've moved on to Blender and animation.
+            </span>
+          </div>
+        </div>
+        <div className="tile">
+          <div className="tile-content">
+            Music <br />
+            <span className="description">
+              I believe my specific taste is "Melodic Dubstep", sorta like
+              Dubstep meets Trance:{' '}
+              <a
+                href="https://soundcloud.com/hegemon/skrux-essence"
+                target="new"
+              >
+                Check it out
+              </a>
+              .
+            </span>
+          </div>
+        </div>
+        <div className="tile">
+          <div className="tile-content">
+            Coding <br />
+            <span className="description">
+              Creating solutions to problems people didn't know they had ;) But
+              really, coding is my favorite tool in my toolbox; There's always
+              somthing exciting to learn.
+            </span>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
 export function WallArt({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
 
@@ -17,12 +91,6 @@ export function WallArt({ materials, nodes, setItems }) {
   useEffect(() => {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
-
-  const Overlay = (
-    <div>
-      <h1 className="title">Music</h1>
-    </div>
-  )
 
   function updateSunTransforms() {
     sunRef.current.scale.y = Math.sin(idx.current) / 5 + 0.83
@@ -76,7 +144,7 @@ export function WallArt({ materials, nodes, setItems }) {
           setLabel(false)
         }}
         onClick={() => {
-          setItems(Overlay)
+          setItems(<OverlayContent />)
         }}
       >
         <mesh

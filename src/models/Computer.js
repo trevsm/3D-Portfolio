@@ -10,6 +10,57 @@ const defaultConfig = {
   precision: 0.0001,
 }
 
+function OverlayContent() {
+  return (
+    <>
+      <h1 className="title">Projects</h1>
+      <div className="tile-grid">
+        <div className="tile">
+          <div className="tile-content">
+            Devices <br />
+            <span className="description">
+              View super fast screenshots of any website in multiple device
+              formats at once. (React | Node | Puppeteer)
+            </span>
+          </div>
+          <div className="tile-bottom">
+            <a href="http://devices.red/" target="new">
+              visit page
+            </a>
+          </div>
+        </div>
+        <div className="tile">
+          <div className="tile-content">
+            Lostkey <br />
+            <span className="description">
+              Anonymous chat rooms in an SMS format. (React | Node | MongoDB)
+            </span>
+          </div>
+          <div className="tile-bottom">
+            <a href="http://lostkey.host/" target="new">
+              visit page
+            </a>
+          </div>
+        </div>
+        <div className="tile">
+          <div className="tile-content">
+            WhenToWakeUp <br />
+            <span className="description">
+              Find when is the best time to wake up if you went to bed right
+              now. (React)
+            </span>
+          </div>
+          <div className="tile-bottom">
+            <a href="https://whentowakeup.com/" target="new">
+              visit page
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
 export function Computer({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
   const [active, setActive] = useState(false)
@@ -29,12 +80,6 @@ export function Computer({ materials, nodes, setItems }) {
       precision: 0.0001,
     },
   })
-
-  const Overlay = (
-    <div>
-      <h1 className="title">Projects</h1>
-    </div>
-  )
 
   useEffect(() => {
     setTimeout(() => {
@@ -57,7 +102,7 @@ export function Computer({ materials, nodes, setItems }) {
           if (allowAnimation.current) setLabel(false)
         }}
         onClick={() => {
-          if (allowAnimation.current) setItems(Overlay)
+          if (allowAnimation.current) setItems(<OverlayContent />)
         }}
       >
         <mesh
