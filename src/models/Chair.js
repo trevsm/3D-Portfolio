@@ -58,14 +58,16 @@ export function Chair({ materials, nodes, setItems }) {
         rotation={ani.rot}
         position={[-0.19, 0.42, -0.14]}
       >
-        <mesh
-          material={materials.Default_Color}
-          geometry={nodes.Chair.geometry}
-        />
-        <mesh
-          material={materials.Default_White}
-          geometry={nodes.Chair_1.geometry}
-        />
+        <group>
+          <mesh
+            material={materials.Default_Color}
+            geometry={nodes.Chair_1.geometry}
+          />
+          <mesh
+            material={materials.Default_White}
+            geometry={nodes.Chair_2.geometry}
+          />
+        </group>
       </a.group>
       <group visible={false}>
         <mesh

@@ -9,7 +9,7 @@ import { Blinds } from './models/Blinds'
 import { Computer } from './models/Computer'
 import { Garbage } from './models/Garbage'
 import { WallArt } from './models/WallArt'
-import { Soda } from './models/Soda'
+// import { Soda } from './models/Soda'
 import { Books } from './models/Books'
 import { Glasses } from './models/Glasses'
 
@@ -35,7 +35,7 @@ export default function Models({ setItems }) {
       <Computer nodes={nodes} materials={materials} setItems={setItems} />
       <Garbage nodes={nodes} materials={materials} setItems={setItems} />
       <WallArt nodes={nodes} materials={materials} setItems={setItems} />
-      <Soda nodes={nodes} materials={materials} setItems={setItems} />
+      {/* <Soda nodes={nodes} materials={materials} setItems={setItems} /> */}
       <Books nodes={nodes} materials={materials} setItems={setItems} />
       <Glasses nodes={nodes} materials={materials} setItems={setItems} />
     </group>
