@@ -1,3 +1,5 @@
+/* Overlay styling */
+
 .overlay {
   position: absolute;
   top: 0;
@@ -13,23 +15,71 @@
   font-family: 'nunito', sans-serif;
   color: #6d5aef;
   border: 10px solid #6d5aef;
+  overflow-y: auto;
 }
 
-.overlay .closeBtn{
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
-    text-align: center;
-    line-height: 18px;
-    margin-left: auto;
-    font-weight: 600;
-    padding: 5px;
-    /* border: 2px solid #6d5aef; */
+.overlay .short {
+  height: 100px;
 }
 
-.overlay .content .title{
+.overlay .short .tile-content {
+  height: 50%;
+}
+
+.overlay .closeBtn {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  line-height: 18px;
+  margin-left: auto;
+  font-weight: 600;
+  padding: 5px;
+}
+
+.overlay .content .title {
   margin: 0 25px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid;
+  padding-bottom: 5px;
+  border-bottom: 2px solid;
+}
+
+.tile-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tile {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: #6854ee;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 0px #6854ee2e;
+}
+
+.tile-content {
+  height: 80%;
+}
+
+.tile .tile-content span.description {
+  font-size: 14px;
+  line-height: 25px;
+  color: #ffffffa3;
+  display: inline-block;
+}
+
+.tile a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #ffffffa3;
+}
+
+.tile .tile-bottom a {
+  font-size: 17px;
+  color: white;
 }

@@ -10,6 +10,26 @@ const defaultConfig = {
   precision: 0.0001,
 }
 
+function OverlayContent() {
+  return (
+    <>
+      <h1 className="title">Soda</h1>
+      <div className="tile-grid">
+        <div className="tile">
+          <div className="tile-content">
+            Soda? <br />
+            <span className="description">
+              Yup, that's it. I just really like soda! Depending on how I feel
+              on a given day, here's my unordered top 3: A&W RB, Mexican Coke,
+              Vernors
+            </span>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
 export function Soda({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
   const [active, setActive] = useState(false)
@@ -20,8 +40,8 @@ export function Soda({ materials, nodes, setItems }) {
   })
 
   const ani = useSpring({
-    rot: label ? [.5, 0, 0] : [0, 0, 0],
-    pos: label ? [0, 0, 0] : [0, -.001, 0],
+    rot: label ? [0.5, 0, 0] : [0, 0, 0],
+    pos: label ? [0, 0, 0] : [0, -0.001, 0],
     config: {
       mass: 0.1,
       tension: 400,
@@ -30,12 +50,6 @@ export function Soda({ materials, nodes, setItems }) {
     },
   })
 
-  const Overlay = (
-    <div>
-      <h1 className="title">Soda</h1>
-    </div>
-  )
-
   useEffect(() => {
     setTimeout(() => {
       setActive(true)
@@ -43,7 +57,7 @@ export function Soda({ materials, nodes, setItems }) {
   }, [])
 
   useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
+    // document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
 
   return (
@@ -56,7 +70,7 @@ export function Soda({ materials, nodes, setItems }) {
           setLabel(false)
         }}
         onClick={() => {
-          setItems(Overlay)
+          // setItems(<OverlayContent />)
         }}
       >
         <mesh
@@ -79,7 +93,7 @@ export function Soda({ materials, nodes, setItems }) {
         geometry={nodes.Hole.geometry}
         position={ani.pos}
       />
-      <group visible={label}>
+      <group visible={false}>
         <mesh
           material={materials.Default_Color}
           geometry={nodes.Soda_Label_1.geometry}

@@ -40,7 +40,7 @@ export function Chair({ materials, nodes, setItems }) {
   }, [])
 
   useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
+    // document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
 
   return (
@@ -53,7 +53,7 @@ export function Chair({ materials, nodes, setItems }) {
           setLabel(false)
         }}
         onClick={() => {
-          setItems(Overlay)
+          // setItems(Overlay)
         }}
         rotation={ani.rot}
         position={[-0.19, 0.42, -0.14]}
@@ -67,7 +67,7 @@ export function Chair({ materials, nodes, setItems }) {
           geometry={nodes.Chair_1.geometry}
         />
       </a.group>
-      <group visible={label}>
+      <group visible={false}>
         <mesh
           material={materials.Default_Color}
           geometry={nodes.Chair_Label_1.geometry}

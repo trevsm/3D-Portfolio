@@ -1,5 +1,42 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSpring, a } from '@react-spring/three'
+
+function OverlayContent() {
+  return (
+    <>
+      <h1 className="title">External Links</h1>
+      <div className="tile-grid">
+        <div className="tile short">
+          <div className="tile-content">Linkedin</div>
+          <div className="tile-bottom">
+            <a href="http://devices.red/" target="new">
+              visit page
+            </a>
+          </div>
+        </div>
+        <div className="tile short">
+          <div className="tile-content">Github</div>
+          <div className="tile-bottom">
+            <a href="http://lostkey.host/" target="new">
+              visit page
+            </a>
+          </div>
+        </div>
+        <div className="tile short">
+          <div className="tile-content">StackOverflow</div>
+          <div className="tile-bottom">
+            <a
+              href="https://stackoverflow.com/users/8026620/subtora"
+              target="new"
+            >
+              visit page
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
 
 export function Blinds({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
@@ -18,12 +55,6 @@ export function Blinds({ materials, nodes, setItems }) {
     document.body.style.cursor = label ? 'pointer' : 'auto'
   }, [label])
 
-  const Overlay = (
-    <div>
-      <h1 className="title">Window</h1>
-    </div>
-  )
-
   return (
     <group>
       <group
@@ -34,7 +65,7 @@ export function Blinds({ materials, nodes, setItems }) {
           setLabel(false)
         }}
         onClick={() => {
-          setItems(Overlay)
+          setItems(<OverlayContent />)
         }}
       >
         <mesh

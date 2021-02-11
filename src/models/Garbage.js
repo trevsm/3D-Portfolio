@@ -21,12 +21,6 @@ export function Garbage({ materials, nodes, setItems }) {
     },
   })
 
-  const Overlay = (
-    <div>
-      <h1 className="title">Garbage</h1>
-    </div>
-  )
-
   function animate() {
     setAnimation(true)
     setTimeout(() => {
@@ -45,7 +39,7 @@ export function Garbage({ materials, nodes, setItems }) {
           setLabel(false)
         }}
         onClick={() => {
-          setItems(Overlay)
+          window.open('https://github.com/trevsm/portfolio');
         }}
       >
         <mesh
@@ -74,13 +68,13 @@ export function Garbage({ materials, nodes, setItems }) {
         <mesh
           material={materials.Default_Color}
           geometry={nodes.Garbage_Text.geometry}
-          position={[-0.59, 0.44, 0.67]}
+          position={[-0.59, 0.44, 0.68]}
           rotation={[Math.PI / 2, 0, -Math.PI / 2]}
         >
           <mesh
             material={materials.Default_Color}
             geometry={nodes.Garbage_CTV.geometry}
-            position={[0.02, 0, 0.04]}
+            position={[0.03, 0, 0.04]}
           />
         </mesh>
       </group>

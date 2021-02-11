@@ -10,6 +10,39 @@ const defaultConfig = {
   precision: 0.0001,
 }
 
+function OverlayContent() {
+  return (
+    <>
+      <h1 className="title">Skills/Languages</h1>
+      <div className="tile-grid horizontal">
+        <div className="tile short">
+          <div className="tile-content">
+            Frontend <br />
+            <span className="description">
+              HTML, CSS, JS, React.js, Three.js
+            </span>
+          </div>
+        </div>
+        <div className="tile short">
+          <div className="tile-content">
+            Backend <br />
+            <span className="description">Node.js, C++, PHP, Java</span>
+          </div>
+        </div>
+        <div className="tile short">
+          <div className="tile-content">
+            Functional
+            <br />
+            <span className="description">
+              Git, NPM, Linux, Bash, OracleSQL, MongoDB
+            </span>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
 export function Lamp({ materials, nodes, setItems }) {
   const [label, setLabel] = useState(false)
   const [active, setActive] = useState(false)
@@ -54,7 +87,7 @@ export function Lamp({ materials, nodes, setItems }) {
           setLabel(false)
         }}
         onClick={() => {
-          setItems(Overlay)
+          setItems(<OverlayContent />)
         }}
         position={[-0.71, 0.66, 0.22]}
         rotation={sProps.rot}
