@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useSpring } from '@react-spring/core'
 import { a } from '@react-spring/three'
 
-export function Garbage({ materials, nodes, setItems }) {
+export function Garbage({ materials, nodes }) {
   const [label, setLabel] = useState(false)
   const [animation, setAnimation] = useState(false)
 
