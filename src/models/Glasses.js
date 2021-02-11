@@ -42,7 +42,7 @@ export function Glasses({ materials, nodes, setItems }) {
             bachelor's degree in Computer Science.
           </p>
           <p>
-            I am also a frontend software developer working for The Energy &
+            I am also a front-end software developer working for The Energy &
             Geoscience Institute at The University of Utah
           </p>
         </div>
