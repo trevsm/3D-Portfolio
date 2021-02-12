@@ -22,12 +22,10 @@ export default function App() {
 
   return (
     <>
-    {console.log(GPUTier)}
       <Canvas
         pixelRatio={window.devicePixelRatio}
         camera={{ position: [0, 2, 4] }}
       >
-        {/* <Stats /> */}
         <ambientLight intensity={0.9} />
         <directionalLight intensity={0.5} />
         <Suspense fallback={<Loader />}>
