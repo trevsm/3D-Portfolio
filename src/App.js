@@ -40,7 +40,6 @@ export default function App() {
         ) : null}
         <CustomCamera />
       </Canvas>
-      )
       <Overlay overlayOpen={overlayOpen} setOverlayOpen={setOverlayOpen}>
         {overlayItems.current}
       </Overlay>
