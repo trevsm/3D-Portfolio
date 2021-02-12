@@ -20,7 +20,7 @@ function OverlayContent() {
           <div className="tile-content">
             Writing <br />
             <span className="description">
-              Poetry mostly; I've found that creating a piece, that resinates
+              Poetry mostly; I've found that creating a piece, that resonates
               with a reader, comes easier when you slow down and describe your
               senses.
             </span>
