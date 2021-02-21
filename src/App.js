@@ -1,24 +1,24 @@
-import React, { Suspense, useEffect, useRef, useState } from 'react'
-import { EffectComposer, Noise } from 'react-postprocessing'
-import { Stats, useDetectGPU } from '@react-three/drei'
-import { Canvas } from 'react-three-fiber'
-import { Loader } from './components/Loader'
-import { CustomCamera } from './components/Camera'
-import { Overlay } from './components/Overlay'
-import Models from './Models'
+import React, { Suspense, useRef, useState } from "react";
+import { EffectComposer, Noise } from "react-postprocessing";
+import { useDetectGPU } from "@react-three/drei";
+import { Canvas } from "react-three-fiber";
+import { Loader } from "./components/Loader";
+import { CustomCamera } from "./components/Camera";
+import { Overlay } from "./components/Overlay";
+import Models from "./Models";
 
-import './App.css'
+import "./App.css";
 
 export default function App() {
-  const [overlayOpen, setOverlayOpen] = useState(false)
-  const overlayItems = useRef([])
+  const [overlayOpen, setOverlayOpen] = useState(false);
+  const overlayItems = useRef([]);
 
-  const GPUTier = useDetectGPU()
+  const GPUTier = useDetectGPU();
 
   const setItems = (items) => {
-    overlayItems.current = items
-    setOverlayOpen(true)
-  }
+    overlayItems.current = items;
+    setOverlayOpen(true);
+  };
 
   return (
     <>
@@ -44,5 +44,5 @@ export default function App() {
         {overlayItems.current}
       </Overlay>
     </>
-  )
+  );
 }

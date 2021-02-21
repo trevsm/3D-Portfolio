@@ -1,49 +1,49 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-import { useSpring } from '@react-spring/core'
-import { a } from '@react-spring/three'
+import { useSpring } from "@react-spring/core";
+import { a } from "@react-spring/three";
 
 const defaultConfig = {
   mass: 5,
   tension: 400,
   friction: 150,
   precision: 0.0001,
-}
+};
 
-export function Books({ materials, nodes, setItems }) {
-  const [label, setLabel] = useState(false)
-  const [active, setActive] = useState(false)
+export function Books({ materials, nodes }) {
+  const [label, setLabel] = useState(false);
+  const [active, setActive] = useState(false);
 
   const sProps = useSpring({
     pos: active ? [0, 0, 0] : [0, 1, 0],
     config: defaultConfig,
-  })
+  });
 
   useEffect(() => {
     setTimeout(() => {
-      setActive(true)
-    }, 300)
-  }, [])
+      setActive(true);
+    }, 300);
+  }, []);
 
   useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
-  }, [label])
+    document.body.style.cursor = label ? "pointer" : "auto";
+  }, [label]);
 
   return (
     <a.group position={sProps.pos}>
       <group
         onPointerEnter={() => {
-          setLabel(true)
+          setLabel(true);
         }}
         onPointerLeave={() => {
-          setLabel(false)
+          setLabel(false);
         }}
       >
         <mesh
           material={materials.Default_Color}
           geometry={nodes.Book_02.geometry}
           onClick={() => {
-            window.open('/Trevor_Smith.pdf')
+            window.open("/Trevor_Smith.pdf");
           }}
         />
         <mesh
@@ -82,5 +82,5 @@ export function Books({ materials, nodes, setItems }) {
         </mesh>
       </group>
     </a.group>
-  )
+  );
 }

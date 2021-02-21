@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function Room({ materials, nodes }) {
   return (
@@ -12,7 +12,7 @@ function Room({ materials, nodes }) {
         geometry={nodes.Walls_Floor_1.geometry}
       />
     </group>
-  )
+  );
 }
 
 function Rug({ materials, nodes }) {
@@ -27,7 +27,7 @@ function Rug({ materials, nodes }) {
         geometry={nodes.Rug_2.geometry}
       />
     </group>
-  )
+  );
 }
 
 function Desk({ materials, nodes }) {
@@ -42,11 +42,7 @@ function Desk({ materials, nodes }) {
         geometry={nodes.Desk_2.geometry}
       />
     </group>
-  )
+  );
 }
 
-export {
-  Desk,
-  Rug,
-  Room,
-}
+export { Desk, Rug, Room };

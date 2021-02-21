@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { useSpring, a } from '@react-spring/three'
+import React, { useEffect, useState } from "react";
+import { useSpring, a } from "@react-spring/three";
 
 function OverlayContent() {
   return (
@@ -9,7 +9,10 @@ function OverlayContent() {
         <div className="tile short">
           <div className="tile-content">Linkedin</div>
           <div className="tile-bottom">
-            <a href="https://www.linkedin.com/in/trevor-smith-27621613b/" target="new">
+            <a
+              href="https://www.linkedin.com/in/trevor-smith-27621613b/"
+              target="new"
+            >
               visit page
             </a>
           </div>
@@ -35,11 +38,11 @@ function OverlayContent() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export function Blinds({ materials, nodes, setItems }) {
-  const [label, setLabel] = useState(false)
+  const [label, setLabel] = useState(false);
 
   const ani = useSpring({
     rot: label ? [0, 0, 0] : [0.2, 0, 0],
@@ -49,23 +52,23 @@ export function Blinds({ materials, nodes, setItems }) {
       friction: 10,
       precision: 0.0001,
     },
-  })
+  });
 
   useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
-  }, [label])
+    document.body.style.cursor = label ? "pointer" : "auto";
+  }, [label]);
 
   return (
     <group>
       <group
         onPointerEnter={() => {
-          setLabel(true)
+          setLabel(true);
         }}
         onPointerLeave={() => {
-          setLabel(false)
+          setLabel(false);
         }}
         onClick={() => {
-          setItems(<OverlayContent />)
+          setItems(<OverlayContent />);
         }}
       >
         <mesh
@@ -110,7 +113,7 @@ export function Blinds({ materials, nodes, setItems }) {
         <mesh
           material={materials.Default_Color}
           geometry={nodes.Blinds_Text.geometry}
-          position={[-0.54, 1.02, -0.9]}
+          position={[-0.54, 1.02, -0.89]}
           rotation={[Math.PI / 2, 0, 0]}
         >
           <mesh
@@ -121,5 +124,5 @@ export function Blinds({ materials, nodes, setItems }) {
         </mesh>
       </group>
     </group>
-  )
+  );
 }

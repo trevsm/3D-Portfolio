@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-import { useSpring } from '@react-spring/core'
-import { a } from '@react-spring/three'
+import { useSpring } from "@react-spring/core";
+import { a } from "@react-spring/three";
 
 const defaultConfig = {
   mass: 5,
   tension: 400,
   friction: 150,
   precision: 0.0001,
-}
+};
 
-export function Chair({ materials, nodes, setItems }) {
-  const [label, setLabel] = useState(false)
-  const [active, setActive] = useState(false)
+export function Chair({ materials, nodes }) {
+  const [label, setLabel] = useState(false);
+  const [active, setActive] = useState(false);
 
   const sProps = useSpring({
     pos: active ? [0, 0, 0] : [1, 0, 0],
     config: defaultConfig,
-  })
+  });
 
   const ani = useSpring({
     rot: label ? [0, 0.1, 0] : [0, 0, 0],
@@ -27,30 +27,30 @@ export function Chair({ materials, nodes, setItems }) {
       friction: 10,
       precision: 0.0001,
     },
-  })
+  });
 
-  const Overlay = (
-    <div>
-      <h1 className="title">Chair</h1>
-    </div>
-  )
+  // const Overlay = (
+  //   <div>
+  //     <h1 className="title">Chair</h1>
+  //   </div>
+  // );
 
   useEffect(() => {
-    setActive(true)
-  }, [])
+    setActive(true);
+  }, []);
 
   useEffect(() => {
     // document.body.style.cursor = label ? 'pointer' : 'auto'
-  }, [label])
+  }, [label]);
 
   return (
     <a.group position={sProps.pos}>
       <a.group
         onPointerEnter={() => {
-          setLabel(true)
+          setLabel(true);
         }}
         onPointerLeave={() => {
-          setLabel(false)
+          setLabel(false);
         }}
         onClick={() => {
           // setItems(Overlay)
@@ -92,5 +92,5 @@ export function Chair({ materials, nodes, setItems }) {
         </mesh>
       </group>
     </a.group>
-  )
+  );
 }

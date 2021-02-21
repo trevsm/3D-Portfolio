@@ -1,5 +1,10 @@
 /* Overlay styling */
 
+:root {
+  --purple: #6d5aef;
+  --oPurple: #6854ee2e;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -12,9 +17,9 @@
   border-radius: 20px;
   padding: 10px;
   font-size: 17pt;
-  font-family: 'nunito', sans-serif;
-  color: #6d5aef;
-  border: 10px solid #6d5aef;
+  font-family: "nunito", sans-serif;
+  color: var(--purple);
+  border: 10px solid var(--purple);
   overflow-y: auto;
 }
 
@@ -28,14 +33,21 @@
 
 .overlay .closeBtn {
   cursor: pointer;
-  width: 20px;
-  height: 20px;
+  border: none;
+  float: right;
+  color: var(--purple);
+  outline: none;
+  font-size: 20px;
   border-radius: 20px;
   text-align: center;
-  line-height: 18px;
+  width: 30px;
   margin-left: auto;
   font-weight: 600;
   padding: 5px;
+}
+
+.overlay .content {
+  clear: both;
 }
 
 .overlay .content .title {
@@ -55,11 +67,11 @@
   width: 200px;
   height: 200px;
   border-radius: 10px;
-  background-color: #6854ee;
+  background-color: var(--purple);
   color: white;
   margin: 10px;
   padding: 10px;
-  box-shadow: 10px 10px 0px #6854ee2e;
+  box-shadow: 10px 10px 0px var(oPurple);
 }
 
 .tile-content {
@@ -99,7 +111,7 @@
 img.profile-pic {
   border-radius: 15px;
   width: 300px;
-  box-shadow: 10px 10px 0px #6854ee2e;
+  box-shadow: 10px 10px 0px var(oPurple);
 }
 
 .overlay .left p {
