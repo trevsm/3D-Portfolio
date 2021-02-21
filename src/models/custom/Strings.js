@@ -1,6 +1,6 @@
-import React, { useMemo, useRef } from 'react'
-import * as THREE from 'three'
-import { useFrame } from 'react-three-fiber'
+import React, { useMemo, useRef } from "react";
+import * as THREE from "three";
+import { useFrame } from "react-three-fiber";
 
 const snoise = `
 // Simplex 2D noise
@@ -32,10 +32,10 @@ float snoise(vec2 v){
   g.yz = a0.yz * x12.xz + h.yz * x12.yw;
   return 130.0 * dot(m, g);
 }
-`
+`;
 
 export function Strings(props) {
-  const ref = useRef()
+  const ref = useRef();
 
   const _VS = /*glsl*/ `
   uniform float time;
@@ -58,7 +58,7 @@ export function Strings(props) {
 
     gl_Position = projectionMatrix * modelViewMatrix * vec4(transformed, 1.0);
   }
-  `
+  `;
 
   const _FS = /*glsl*/ `
   varying vec3 Normal;
@@ -71,19 +71,19 @@ export function Strings(props) {
 
     gl_FragColor = vec4(vec3(0.05,0.0,2.0),0.9);
   }
-  `
+  `;
 
   const uniforms = useMemo(
     () => ({
-      color: { value: new THREE.Color('blue') },
+      color: { value: new THREE.Color("blue") },
       time: { value: 0 },
     }),
     []
-  )
+  );
 
   useFrame(({ clock }) => {
-    uniforms.time.value = clock.elapsedTime * props.amp
-  })
+    uniforms.time.value = clock.elapsedTime * props.amp;
+  });
 
   return (
     <mesh
@@ -103,5 +103,5 @@ export function Strings(props) {
         transparent
       />
     </mesh>
-  )
+  );
 }

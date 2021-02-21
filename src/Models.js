@@ -1,21 +1,21 @@
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei/useGLTF'
-import { TextHeaders } from './models/Text'
-import { Room, Rug, Desk } from './models/Static'
-import { Chair } from './models/Chair'
-import { Lamp } from './models/Lamp'
-import { Clock } from './models/Clock'
-import { Blinds } from './models/Blinds'
-import { Computer } from './models/Computer'
-import { Garbage } from './models/Garbage'
-import { WallArt } from './models/WallArt'
+import React, { useRef } from "react";
+import { useGLTF } from "@react-three/drei/useGLTF";
+import { TextHeaders } from "./models/Text";
+import { Room, Rug, Desk } from "./models/Static";
+import { Chair } from "./models/Chair";
+import { Lamp } from "./models/Lamp";
+import { Clock } from "./models/Clock";
+import { Blinds } from "./models/Blinds";
+import { Computer } from "./models/Computer";
+import { Garbage } from "./models/Garbage";
+import { WallArt } from "./models/WallArt";
 // import { Soda } from './models/Soda'
-import { Books } from './models/Books'
-import { Glasses } from './models/Glasses'
+import { Books } from "./models/Books";
+import { Glasses } from "./models/Glasses";
 
 export default function Models({ setItems }) {
-  const group = useRef()
-  const { nodes, materials } = useGLTF('/models/iso-poly.gltf')
+  const group = useRef();
+  const { nodes, materials } = useGLTF("/models/iso-poly.gltf");
 
   return (
     <group
@@ -39,7 +39,7 @@ export default function Models({ setItems }) {
       <Books nodes={nodes} materials={materials} setItems={setItems} />
       <Glasses nodes={nodes} materials={materials} setItems={setItems} />
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/models/iso-poly.gltf')
+useGLTF.preload("/models/iso-poly.gltf");

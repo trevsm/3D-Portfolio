@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react'
-import { useFrame } from 'react-three-fiber'
+import React, { useEffect, useState, useRef } from "react";
+import { useFrame } from "react-three-fiber";
 
 function OverlayContent() {
   return (
@@ -10,9 +10,9 @@ function OverlayContent() {
           <div className="tile-content">
             Hiking <br />
             <span className="description">
-              Utah's High Uintah Mountains are breathtaking! If you ever get a
-              chance to go, take a map and visit one of the unnamed lakes near
-              Mt. Marsell.
+              Utah&apos;s High Uintah Mountains are breathtaking! If you ever
+              get a chance to go, take a map and visit one of the unnamed lakes
+              near Mt. Marsell.
             </span>
           </div>
         </div>
@@ -20,9 +20,9 @@ function OverlayContent() {
           <div className="tile-content">
             Writing <br />
             <span className="description">
-              Poetry mostly; I've found that creating a piece, that resonates
-              with a reader, comes easier when you slow down and describe your
-              senses.
+              Poetry mostly; I&apos;ve found that creating a piece, that
+              resonates with a reader, comes easier when you slow down and
+              describe your senses.
             </span>
           </div>
         </div>
@@ -40,7 +40,7 @@ function OverlayContent() {
             3D Modeling <br />
             <span className="description">
               Originally, I started learning with CAD and 3D Printing the
-              result. Now, I've moved on to Blender and animation.
+              result. Now, I&apos;ve moved on to Blender and animation.
             </span>
           </div>
         </div>
@@ -48,8 +48,8 @@ function OverlayContent() {
           <div className="tile-content">
             Music <br />
             <span className="description">
-              I believe my specific taste is "Melodic Dubstep", sorta like
-              Dubstep meets Trance:{' '}
+              I believe my specific taste is &quot;Melodic Dubstep&quot;, sorta
+              like Dubstep meets Trance:{" "}
               <a
                 href="https://soundcloud.com/hegemon/skrux-essence"
                 target="new"
@@ -64,87 +64,87 @@ function OverlayContent() {
           <div className="tile-content">
             Coding <br />
             <span className="description">
-              Creating solutions to problems people didn't know they had ;) But
-              really, coding is my favorite tool in my toolbox; There's always
-              somthing exciting to learn.
+              Creating solutions to problems people didn&apos;t know they had ;)
+              But really, coding is my favorite tool in my toolbox; There&apos;s
+              always somthing exciting to learn.
             </span>
           </div>
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export function WallArt({ materials, nodes, setItems }) {
-  const [label, setLabel] = useState(false)
+  const [label, setLabel] = useState(false);
 
-  const sunRef = useRef()
-  const sun2Ref = useRef()
-  const recordRef = useRef()
-  const armRef = useRef()
-  const c1Ref = useRef()
-  const c2Ref = useRef()
+  const sunRef = useRef();
+  const sun2Ref = useRef();
+  const recordRef = useRef();
+  const armRef = useRef();
+  const c1Ref = useRef();
+  const c2Ref = useRef();
 
-  const idx = useRef(1.15)
-  const tmp = useRef(1)
+  const idx = useRef(1.15);
+  const tmp = useRef(1);
 
   useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
-  }, [label])
+    document.body.style.cursor = label ? "pointer" : "auto";
+  }, [label]);
 
   function updateSunTransforms() {
-    sunRef.current.scale.y = Math.sin(idx.current) / 5 + 0.83
-    sunRef.current.scale.z = Math.sin(idx.current) / 5 + 0.83
+    sunRef.current.scale.y = Math.sin(idx.current) / 5 + 0.83;
+    sunRef.current.scale.z = Math.sin(idx.current) / 5 + 0.83;
 
-    sun2Ref.current.scale.y = -Math.sin(idx.current) / 5 + 0.83
-    sun2Ref.current.scale.z = -Math.sin(idx.current) / 5 + 0.83
+    sun2Ref.current.scale.y = -Math.sin(idx.current) / 5 + 0.83;
+    sun2Ref.current.scale.z = -Math.sin(idx.current) / 5 + 0.83;
 
-    sunRef.current.position.y = Math.sin(idx.current) / 10 + 0.83
-    sun2Ref.current.position.y = -Math.sin(idx.current) / 10 + 0.83
+    sunRef.current.position.y = Math.sin(idx.current) / 10 + 0.83;
+    sun2Ref.current.position.y = -Math.sin(idx.current) / 10 + 0.83;
   }
 
   function spinRecordAndArm() {
-    recordRef.current.rotation.x = -idx.current
-    armRef.current.rotation.x = Math.cos(idx.current) / 4 - 0.2
+    recordRef.current.rotation.x = -idx.current;
+    armRef.current.rotation.x = Math.cos(idx.current) / 4 - 0.2;
   }
 
   function updateStringTransforms() {
-    c1Ref.current.rotation.y = idx.current / 5
-    c2Ref.current.rotation.y = -idx.current / 5
+    c1Ref.current.rotation.y = idx.current / 5;
+    c2Ref.current.rotation.y = -idx.current / 5;
   }
 
   useEffect(() => {
-    updateSunTransforms()
-    spinRecordAndArm()
-    updateStringTransforms()
-  }, [])
+    updateSunTransforms();
+    spinRecordAndArm();
+    updateStringTransforms();
+  }, []);
 
   useFrame(({ clock }) => {
     if (label) {
-      if (!clock.running) clock.start()
-      idx.current = clock.elapsedTime * 1.5 + tmp.current
-      updateSunTransforms()
-      spinRecordAndArm()
-      updateStringTransforms()
+      if (!clock.running) clock.start();
+      idx.current = clock.elapsedTime * 1.5 + tmp.current;
+      updateSunTransforms();
+      spinRecordAndArm();
+      updateStringTransforms();
     } else {
       if (clock.running) {
-        tmp.current += clock.elapsedTime * 1.5
-        clock.stop()
+        tmp.current += clock.elapsedTime * 1.5;
+        clock.stop();
       }
     }
-  })
+  });
 
   return (
     <group>
       <group
         onPointerEnter={() => {
-          setLabel(true)
+          setLabel(true);
         }}
         onPointerLeave={() => {
-          setLabel(false)
+          setLabel(false);
         }}
         onClick={() => {
-          setItems(<OverlayContent />)
+          setItems(<OverlayContent />);
         }}
       >
         <mesh
@@ -231,5 +231,5 @@ export function WallArt({ materials, nodes, setItems }) {
         </mesh>
       </group>
     </group>
-  )
+  );
 }

@@ -1,14 +1,14 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef } from "react";
 
-import { useSpring } from '@react-spring/core'
-import { a } from '@react-spring/three'
+import { useSpring } from "@react-spring/core";
+import { a } from "@react-spring/three";
 
 const defaultConfig = {
   mass: 5,
   tension: 400,
   friction: 150,
   precision: 0.0001,
-}
+};
 
 function OverlayContent() {
   return (
@@ -58,18 +58,18 @@ function OverlayContent() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export function Computer({ materials, nodes, setItems }) {
-  const [label, setLabel] = useState(false)
-  const [active, setActive] = useState(false)
-  const allowAnimation = useRef(false)
+  const [label, setLabel] = useState(false);
+  const [active, setActive] = useState(false);
+  const allowAnimation = useRef(false);
 
   const sProps = useSpring({
     rot: active ? [0, 0, 0] : [0, 0, -1.8],
     config: defaultConfig,
-  })
+  });
 
   const ani = useSpring({
     rot2: label ? [0, 0, -0.2] : [0, 0, 0],
@@ -79,30 +79,30 @@ export function Computer({ materials, nodes, setItems }) {
       friction: 10,
       precision: 0.0001,
     },
-  })
+  });
 
   useEffect(() => {
     setTimeout(() => {
-      setActive(true)
-      allowAnimation.current = true
-    }, 1000)
-  }, [])
+      setActive(true);
+      allowAnimation.current = true;
+    }, 1000);
+  }, []);
 
   useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
-  }, [label])
+    document.body.style.cursor = label ? "pointer" : "auto";
+  }, [label]);
 
   return (
     <group>
       <group
         onPointerEnter={() => {
-          if (allowAnimation.current) setLabel(true)
+          if (allowAnimation.current) setLabel(true);
         }}
         onPointerLeave={() => {
-          if (allowAnimation.current) setLabel(false)
+          if (allowAnimation.current) setLabel(false);
         }}
         onClick={() => {
-          if (allowAnimation.current) setItems(<OverlayContent />)
+          if (allowAnimation.current) setItems(<OverlayContent />);
         }}
       >
         <mesh
@@ -159,5 +159,5 @@ export function Computer({ materials, nodes, setItems }) {
         </mesh>
       </group>
     </group>
-  )
+  );
 }

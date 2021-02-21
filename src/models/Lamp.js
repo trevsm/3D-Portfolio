@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-import { useSpring } from '@react-spring/core'
-import { a } from '@react-spring/three'
+import { useSpring } from "@react-spring/core";
+import { a } from "@react-spring/three";
 
 const defaultConfig = {
   mass: 5,
   tension: 400,
   friction: 150,
   precision: 0.0001,
-}
+};
 
 function OverlayContent() {
   return (
@@ -40,18 +40,18 @@ function OverlayContent() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
 export function Lamp({ materials, nodes, setItems }) {
-  const [label, setLabel] = useState(false)
-  const [active, setActive] = useState(false)
+  const [label, setLabel] = useState(false);
+  const [active, setActive] = useState(false);
 
   const sProps = useSpring({
     pos: active ? [0, 0, 0] : [0, 1, 0],
     rot: active ? [0, 0, 0] : [0, Math.PI, 0],
     config: defaultConfig,
-  })
+  });
 
   const ani = useSpring({
     rot: label ? [0.2, 0, 0] : [0, 0, 0],
@@ -61,33 +61,33 @@ export function Lamp({ materials, nodes, setItems }) {
       friction: 10,
       precision: 0.0001,
     },
-  })
+  });
 
-  const Overlay = (
-    <div>
-      <h1 className="title">Skills</h1>
-    </div>
-  )
-
-  useEffect(() => {
-    setActive(true)
-  }, [])
+  // const Overlay = (
+  //   <div>
+  //     <h1 className="title">Skills</h1>
+  //   </div>
+  // )
 
   useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
-  }, [label])
+    setActive(true);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.cursor = label ? "pointer" : "auto";
+  }, [label]);
 
   return (
     <a.group position={sProps.pos}>
       <a.group
         onPointerEnter={() => {
-          setLabel(true)
+          setLabel(true);
         }}
         onPointerLeave={() => {
-          setLabel(false)
+          setLabel(false);
         }}
         onClick={() => {
-          setItems(<OverlayContent />)
+          setItems(<OverlayContent />);
         }}
         position={[-0.71, 0.66, 0.22]}
         rotation={sProps.rot}
@@ -140,5 +140,5 @@ export function Lamp({ materials, nodes, setItems }) {
         </group>
       </a.group>
     </a.group>
-  )
+  );
 }

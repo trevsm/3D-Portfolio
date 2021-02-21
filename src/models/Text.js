@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-import { useSpring } from '@react-spring/core'
-import { a } from '@react-spring/three'
+import { useSpring } from "@react-spring/core";
+import { a } from "@react-spring/three";
 
 export function TextHeaders({ materials, nodes }) {
-  const [active, setActive] = useState(false)
-  const [active1, setActive1] = useState(false)
-  const [active2, setActive2] = useState(false)
-  const [active3, setActive3] = useState(false)
+  const [active, setActive] = useState(false);
+  const [active1, setActive1] = useState(false);
+  const [active2, setActive2] = useState(false);
+  const [active3, setActive3] = useState(false);
 
   const pX = [
     [-0.83, 1.18, 0.73],
     [-0.83, 0.95, 0.14],
     [-0.83, 0.87, 0.14],
     [0.21, 0.41, -0.9],
-  ]
+  ];
 
   const sProps = useSpring({
     pos0: active ? pX[0] : [pX[0][0] - 1, pX[0][1], pX[0][2]],
@@ -22,22 +22,22 @@ export function TextHeaders({ materials, nodes }) {
     pos2: active2 ? pX[2] : [pX[2][0] - 1, pX[2][1], pX[2][2]],
     pos3: active3 ? pX[3] : [pX[3][0], pX[3][1], pX[3][2] - 0.5],
     config: { mass: 20, tension: 400, friction: 200, precision: 0.0001 },
-  })
+  });
 
   useEffect(() => {
     setTimeout(() => {
-      setActive(true)
-    }, 250)
+      setActive(true);
+    }, 250);
     setTimeout(() => {
-      setActive1(true)
-    }, 750)
+      setActive1(true);
+    }, 750);
     setTimeout(() => {
-      setActive2(true)
-    }, 1000)
+      setActive2(true);
+    }, 1000);
     setTimeout(() => {
-      setActive3(true)
-    }, 1500)
-  }, [])
+      setActive3(true);
+    }, 1500);
+  }, []);
 
   return (
     <group>
@@ -66,5 +66,5 @@ export function TextHeaders({ materials, nodes }) {
         rotation={[1.56, 0, 0]}
       />
     </group>
-  )
+  );
 }

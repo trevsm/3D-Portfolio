@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 
-import { useSpring } from '@react-spring/core'
-import { a } from '@react-spring/three'
+import { useSpring } from "@react-spring/core";
+import { a } from "@react-spring/three";
 
 export function Garbage({ materials, nodes }) {
-  const [label, setLabel] = useState(false)
-  const [animation, setAnimation] = useState(false)
+  const [label, setLabel] = useState(false);
+  const [animation, setAnimation] = useState(false);
 
   useEffect(() => {
-    document.body.style.cursor = label ? 'pointer' : 'auto'
-  }, [label])
+    document.body.style.cursor = label ? "pointer" : "auto";
+  }, [label]);
 
   const ani = useSpring({
     pos: animation ? [0, 0.03, 0] : [0, 0, 0],
@@ -19,31 +19,31 @@ export function Garbage({ materials, nodes }) {
       friction: 10,
       precision: 0.0001,
     },
-  })
+  });
 
   function animate() {
-    setAnimation(true)
+    setAnimation(true);
     setTimeout(() => {
-      setAnimation(false)
-    }, 100)
+      setAnimation(false);
+    }, 100);
   }
 
   return (
     <group>
       <group
         onPointerEnter={() => {
-          setLabel(true)
-          animate()
+          setLabel(true);
+          animate();
         }}
         onPointerLeave={() => {
-          setLabel(false)
+          setLabel(false);
         }}
       >
         <mesh
           material={materials.Default_Color}
           geometry={nodes.Bin_1.geometry}
           onClick={() => {
-            window.open('https://github.com/trevsm/portfolio')
+            window.open("https://github.com/trevsm/portfolio");
           }}
         />
         <mesh
@@ -79,5 +79,5 @@ export function Garbage({ materials, nodes }) {
         </mesh>
       </group>
     </group>
-  )
+  );
 }
