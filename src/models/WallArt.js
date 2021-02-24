@@ -11,8 +11,8 @@ function OverlayContent() {
             Programming
             <br />
             <span className="description">
-              Every problem in my life is an oportunity for a new project; every
-              project I pursue is an opportunity to learn somthing new.
+              Every problem in my life is an opportunity for a new project;
+              every project I pursue is an opportunity to learn somthing new.
             </span>
           </div>
         </div>
@@ -59,7 +59,7 @@ export function WallArt({ materials, nodes, setItems }) {
   const c1Ref = useRef();
   const c2Ref = useRef();
 
-  const idx = useRef(1.15);
+  const index = useRef(1.15);
   const tmp = useRef(1);
 
   useEffect(() => {
@@ -67,24 +67,24 @@ export function WallArt({ materials, nodes, setItems }) {
   }, [label]);
 
   function updateSunTransforms() {
-    sunRef.current.scale.y = Math.sin(idx.current) / 5 + 0.83;
-    sunRef.current.scale.z = Math.sin(idx.current) / 5 + 0.83;
+    sunRef.current.scale.y = Math.sin(index.current) / 5 + 0.83;
+    sunRef.current.scale.z = Math.sin(index.current) / 5 + 0.83;
 
-    sun2Ref.current.scale.y = -Math.sin(idx.current) / 5 + 0.83;
-    sun2Ref.current.scale.z = -Math.sin(idx.current) / 5 + 0.83;
+    sun2Ref.current.scale.y = -Math.sin(index.current) / 5 + 0.83;
+    sun2Ref.current.scale.z = -Math.sin(index.current) / 5 + 0.83;
 
-    sunRef.current.position.y = Math.sin(idx.current) / 10 + 0.83;
-    sun2Ref.current.position.y = -Math.sin(idx.current) / 10 + 0.83;
+    sunRef.current.position.y = Math.sin(index.current) / 10 + 0.83;
+    sun2Ref.current.position.y = -Math.sin(index.current) / 10 + 0.83;
   }
 
   function spinRecordAndArm() {
-    recordRef.current.rotation.x = -idx.current;
-    armRef.current.rotation.x = Math.cos(idx.current) / 4 - 0.2;
+    recordRef.current.rotation.x = -index.current;
+    armRef.current.rotation.x = Math.cos(index.current) / 4 - 0.2;
   }
 
   function updateStringTransforms() {
-    c1Ref.current.rotation.y = idx.current / 5;
-    c2Ref.current.rotation.y = -idx.current / 5;
+    c1Ref.current.rotation.y = index.current / 5;
+    c2Ref.current.rotation.y = -index.current / 5;
   }
 
   useEffect(() => {
@@ -96,7 +96,7 @@ export function WallArt({ materials, nodes, setItems }) {
   useFrame(({ clock }) => {
     if (label) {
       if (!clock.running) clock.start();
-      idx.current = clock.elapsedTime * 1.5 + tmp.current;
+      index.current = clock.elapsedTime * 1.5 + tmp.current;
       updateSunTransforms();
       spinRecordAndArm();
       updateStringTransforms();
