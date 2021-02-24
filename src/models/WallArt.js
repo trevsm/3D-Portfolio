@@ -8,30 +8,21 @@ function OverlayContent() {
       <div className="tile-grid">
         <div className="tile">
           <div className="tile-content">
+            Programming
+            <br />
+            <span className="description">
+              Every problem in my life is an oportunity for a new project; every
+              project I pursue is an opportunity to learn somthing new.
+            </span>
+          </div>
+        </div>
+        <div className="tile">
+          <div className="tile-content">
             Hiking <br />
             <span className="description">
               Utah&apos;s High Uintah Mountains are breathtaking! If you ever
               get a chance to go, take a map and visit one of the unnamed lakes
               near Mt. Marsell.
-            </span>
-          </div>
-        </div>
-        <div className="tile">
-          <div className="tile-content">
-            Writing <br />
-            <span className="description">
-              Poetry mostly; I&apos;ve found that creating a piece, that
-              resonates with a reader, comes easier when you slow down and
-              describe your senses.
-            </span>
-          </div>
-        </div>
-        <div className="tile">
-          <div className="tile-content">
-            Swimming <br />
-            <span className="description">
-              Always loved the water since I was little. The weightlessness and
-              lack of sound at the bottom of the pool really lets me think.
             </span>
           </div>
         </div>
@@ -49,24 +40,7 @@ function OverlayContent() {
             Music <br />
             <span className="description">
               I believe my specific taste is &quot;Melodic Dubstep&quot;, sorta
-              like Dubstep meets Trance:{" "}
-              <a
-                href="https://soundcloud.com/hegemon/skrux-essence"
-                target="new"
-              >
-                Check it out
-              </a>
-              .
-            </span>
-          </div>
-        </div>
-        <div className="tile">
-          <div className="tile-content">
-            Coding <br />
-            <span className="description">
-              Creating solutions to problems people didn&apos;t know they had ;)
-              But really, coding is my favorite tool in my toolbox; There&apos;s
-              always somthing exciting to learn.
+              like Dubstep meets Trance.
             </span>
           </div>
         </div>

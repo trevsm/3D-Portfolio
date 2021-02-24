@@ -29,7 +29,7 @@
   },
   "scripts": {
     "start": "parcel \"./public/index.html\" && cp -r public/models dist",
-    "build": "parcel build \"./public/index.html\" && sh copy.sh",
+    "build": "parcel build \"./public/index.html\" --no-content-hash --no-source-maps && sh copy.sh",
     "format": "prettier \"src/**/*.{js, html}\" --write",
     "lint": "eslint \"src/**/*.{js, jsx}\" --quiet",
     "react-spring-issue-1078": "find node_modules -path \\*@react-spring/\\*/package.json -exec sed -i.bak 's/\"sideEffects\": false/\"sideEffects\": true/g' {} +",
