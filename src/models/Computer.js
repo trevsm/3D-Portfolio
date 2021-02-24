@@ -25,20 +25,10 @@ function OverlayContent() {
           </div>
           <div className="tile-bottom">
             <a href="http://devices.red/" target="new">
-              visit page
+              Live Page
             </a>
-          </div>
-        </div>
-        <div className="tile">
-          <div className="tile-content">
-            Lostkey <br />
-            <span className="description">
-              Anonymous chat rooms in an SMS format. (React | Node | MongoDB)
-            </span>
-          </div>
-          <div className="tile-bottom">
-            <a href="http://lostkey.host/" target="new">
-              visit page
+            <a href="https://github.com/trevsm/mydevices" target="new">
+              Source
             </a>
           </div>
         </div>
@@ -52,7 +42,23 @@ function OverlayContent() {
           </div>
           <div className="tile-bottom">
             <a href="https://whentowakeup.com/" target="new">
-              visit page
+              Live Page
+            </a>
+            <a href="https://github.com/trevsm/whentowakeup" target="new">
+              Source
+            </a>
+          </div>
+        </div>
+        <div className="tile">
+          <div className="tile-content">
+            Lostkey <br />
+            <span className="description">
+              Anonymous chat rooms in an SMS format. (React | Node | MongoDB)
+            </span>
+          </div>
+          <div className="tile-bottom">
+            <a href="http://lostkey.host/" target="new">
+              Live Page
             </a>
           </div>
         </div>
