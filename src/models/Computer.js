@@ -62,6 +62,38 @@ function OverlayContent() {
             </a>
           </div>
         </div>
+        <div className="tile">
+          <div className="tile-content">
+            WhatGPU?! <br />
+            <span className="description">
+              Find out online what GPU you are using. (React | Three)
+            </span>
+          </div>
+          <div className="tile-bottom">
+            <a href="https://whatgpu.net/" target="new">
+              Live Page
+            </a>
+            <a href="https://github.com/trevsm/whatgpu" target="new">
+              Source
+            </a>
+          </div>
+        </div>
+        <div className="tile">
+          <div className="tile-content">
+            Satisfying 24h Clock <br />
+            <span className="description">
+              Oddly Satisfying 24 hour clock recreation. (React)
+            </span>
+          </div>
+          <div className="tile-bottom">
+            <a href="https://trevsm.github.io/os-modern-clock/" target="new">
+              Live Page
+            </a>
+            <a href="https://github.com/trevsm/os-modern-clock" target="new">
+              Source
+            </a>
+          </div>
+        </div>
       </div>
     </>
   );
