@@ -14,7 +14,7 @@ import { Glasses } from "./models/Glasses";
 
 export default function Models({ setItems }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/models/iso-poly.gltf");
+  const { nodes, materials } = useGLTF("./models/iso-poly.gltf");
 
   return (
     <group
@@ -40,4 +40,4 @@ export default function Models({ setItems }) {
   );
 }
 
-useGLTF.preload("/models/iso-poly.gltf");
+useGLTF.preload("./models/iso-poly.gltf");
