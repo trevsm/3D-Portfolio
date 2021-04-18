@@ -53,7 +53,7 @@
 
 .overlay .content .title {
   margin: 0 25px;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   border-bottom: 2px solid;
 }
 
@@ -61,7 +61,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .tile {

@@ -15,7 +15,7 @@ export function Overlay(props) {
             onClick={closeOverlay}
             onBlur={closeOverlay}
           >
-            x
+            &times;
           </button>
           <div className="content">{props.children}</div>
         </div>

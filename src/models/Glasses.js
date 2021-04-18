@@ -3,8 +3,6 @@ import React, { useEffect, useState } from "react";
 import { useSpring } from "@react-spring/core";
 import { a } from "@react-spring/three";
 
-import Profile from "../static/profile.jpg";
-
 const defaultConfig = {
   mass: 5,
   tension: 400,
@@ -47,7 +45,7 @@ export function Glasses({ materials, nodes, setItems }) {
           </p>
         </div>
         <div className="right">
-          <img src={Profile} alt="My Profile" className="profile-pic" />
+          <img src="./profile.jpg" alt="My Profile" className="profile-pic" />
         </div>
       </div>
     </div>
