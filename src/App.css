@@ -38,13 +38,13 @@
   float: right;
   color: var(--purple);
   outline: none;
-  font-size: 20px;
   border-radius: 20px;
   text-align: center;
   width: 30px;
   margin-left: auto;
-  font-weight: 600;
   padding: 5px;
+  font-weight: 100;
+  font-size: 30px;
 }
 
 .overlay .content {
