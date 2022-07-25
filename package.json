@@ -8,6 +8,7 @@
     "build": "react-scripts build",
     "deploy": "npx gh-pages -d build"
   },
+  "homepages": "https://trevsm.github.io/3D-Portfolio/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/trevsm/3D-Portfolio.git"
