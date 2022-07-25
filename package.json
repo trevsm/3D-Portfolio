@@ -4,7 +4,9 @@
   "description": "React, React-Spring, R3F, Blender",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "npx gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "@react-three/drei": "^9.17.3",
     "@react-three/fiber": "^8.2.1",
     "@react-three/postprocessing": "^2.5.4",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
