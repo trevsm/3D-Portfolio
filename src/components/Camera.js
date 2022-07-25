@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useThree } from "react-three-fiber";
+import { useThree } from "@react-three/fiber";
 
 export function CustomCamera() {
   const { camera } = useThree();

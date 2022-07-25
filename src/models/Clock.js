@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { useFrame } from "react-three-fiber";
+import { useFrame } from "@react-three/fiber";
 
 export function Clock({ materials, nodes }) {
   const hourHand = useRef();

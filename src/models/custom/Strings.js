@@ -1,8 +1,8 @@
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
-import { useFrame } from "react-three-fiber";
+import { useFrame } from "@react-three/fiber";
 
-const snoise = `
+const snoise = /*glsl*/ `
 // Simplex 2D noise
 vec3 permute(vec3 x) { return mod(((x*34.0)+1.0)*x, 289.0); }
 

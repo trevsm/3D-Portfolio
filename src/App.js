@@ -1,7 +1,7 @@
 import React, { Suspense, useRef, useState } from "react";
-import { EffectComposer, Noise } from "react-postprocessing";
+import { EffectComposer, Noise } from "@react-three/postprocessing";
 import { useDetectGPU } from "@react-three/drei";
-import { Canvas } from "react-three-fiber";
+import { Canvas } from "@react-three/fiber";
 import { Loader } from "./components/Loader";
 import { CustomCamera } from "./components/Camera";
 import { Overlay } from "./components/Overlay";

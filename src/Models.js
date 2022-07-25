@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei/useGLTF";
 import { TextHeaders } from "./models/Text";
 import { Room, Rug, Desk } from "./models/Static";
 import { Chair } from "./models/Chair";
@@ -11,10 +10,11 @@ import { Garbage } from "./models/Garbage";
 import { WallArt } from "./models/WallArt";
 import { Books } from "./models/Books";
 import { Glasses } from "./models/Glasses";
+import { useGLTF } from "@react-three/drei";
 
 export default function Models({ setItems }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("./models/iso-poly.gltf");
+  const { nodes, materials } = useGLTF("/models/iso-poly.gltf");
 
   return (
     <group
@@ -40,4 +40,4 @@ export default function Models({ setItems }) {
   );
 }
 
-useGLTF.preload("./models/iso-poly.gltf");
+useGLTF.preload("/models/iso-poly.gltf");
