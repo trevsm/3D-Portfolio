@@ -43,7 +43,7 @@ export function Books({ materials, nodes }) {
           material={materials.Default_Color}
           geometry={nodes.Book_02.geometry}
           onClick={() => {
-            window.open("./Trevor_Smith.pdf");
+            window.open("https://trevsm.com/TrevorSmith.pdf");
           }}
         />
         <mesh
