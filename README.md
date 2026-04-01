@@ -48,4 +48,4 @@ Follow your usual **GitHub Pages** flow for this repo (e.g. deploy from `gh-page
 
 ## License
 
-Add your license file and a one-line note here (e.g. MIT) if you publish the repo publicly.
+[MIT](https://github.com/trevsm/3D-Portfolio/blob/main/LICENSE) — Copyright (c) 2022 Trevor Smith. Full terms in [`LICENSE`](https://github.com/trevsm/3D-Portfolio/blob/main/LICENSE).
